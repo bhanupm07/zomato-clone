@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-div {
+  transition: transform 0.2s;
+}
+
+.custom-div:hover {
+  transform: scale(1.05);
+}
