@@ -51,7 +51,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/delivery", async (req, res) => {
+app.get("/api/delivery", async (req, res) => {
   try {
     let deliveryRestaurants = await Delivery.find();
     if (deliveryRestaurants) {

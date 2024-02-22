@@ -6,13 +6,11 @@ const locationSlice = createSlice({
   name: "location",
   reducers: {
     handleChange(state, action) {
-      //   console.log(action.payload.target.value);
       return action.payload;
     },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchLocation.fulfilled, (state, action) => {
-      //   console.log(action.payload);
       return action.payload;
     });
   },

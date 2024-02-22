@@ -8,8 +8,12 @@ const Carousel = ({ dataArray }) => {
     if (index >= pointers.left && index <= pointers.right) {
       return (
         <div key={index} className="flex flex-col items-center gap-2 w-60 ">
-          <div>
-            <img src={food.img} alt={food.name} className="rounded-full w-60" />
+          <div className="rounded-full">
+            <img
+              src={food.img}
+              alt={food.name}
+              className="rounded-full w-60 shadow-md"
+            />
           </div>
           <span className="text-xl text-center font-medium">{food.name}</span>
         </div>
