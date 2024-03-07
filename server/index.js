@@ -8,6 +8,7 @@ const jwt = require("jsonwebtoken");
 
 const User = require("./models/userModel");
 const Delivery = require("./models/deliveryModel");
+const Food = require("./models/foodModel");
 
 const app = express();
 

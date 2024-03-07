@@ -1,0 +1,652 @@
+[
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/92b/a413a537c40ab2d7b7e03bac6baea92b.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Margherita Pizza (personal Giant Slice (22.5 Cm))",
+    "rating": 4.1,
+    "votes": 72,
+    "price": 134,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Pizza",
+    "description": "A classic cheesy Margherita. Cant go wrong. [Fat-14.3 per 100 g, Protein-12.6 per 100 g, Carbohydrate-39.2 per 100 g, Sugar-0 per 100 g, Calories-336 K.cal] Nutritional information per 100g"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/ec8/b4a826a6fccc89a0b9bd421bfe3d1ec8.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Farm Villa Pizza",
+    "rating": 3.9,
+    "votes": 33,
+    "price": 286,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Pizza",
+    "description": "The freshness of capsicum, tomatoes, with the flavour of paneer and red paprika topped with a Cheese dip. [Fat-10.9 per 100 g, Protein-12.7 per 100 g, Carbohydrate-34.9 per 100 g, Sugar-0 per 100 g, Calories-288.9 k.cal]Nutritional information per 100g"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/8e0/b206b88178f94f2ccf94c72afb5c98e0.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Pepperoni Gourmet-Pizza",
+    "rating": 0,
+    "votes": 0,
+    "price": 699,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Pizza",
+    "description": "The classic Italian gourmet pizza with bocconcini cheese and chicken pepperoni."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/5ff/698685a1cec5dacd6d92b7340e7fd5ff.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Blazing Chicken & Paprika",
+    "rating": 4.2,
+    "votes": 6,
+    "price": 249,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Pizza",
+    "description": "Hot & spicy chicken pizza with a combination of chicken keema & red paprika toppings and a new spicy peri peri sauce."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/b9f/f5263394673e035c2658bbf700bf5b9f.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Loaded Choco Lava Cake",
+    "rating": 0,
+    "votes": 0,
+    "price": 119,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Pizza",
+    "description": "Valentine’s Special:  Heart shaped Choco Lava Cake! More Chocolaty with Gooey molten lava inside"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/910/2833374cbbd7125505afc349c64ff910.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Tandoori Paneer",
+    "rating": 4,
+    "votes": 71,
+    "price": 319,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Pizza",
+    "description": "It's our signature. Spiced Paneer, Crunchy Onions & Green Capsicum, spicy Red Paprika with delicious Tandoori Sauce and 100% mozzarella cheese!"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/9ce/db40cb52b0f5a2d3753356c5a88c09ce.png?fit=around|130:130&crop=130:130;*,*",
+    "name": "Midnight Pizza Party for 2 Non Veg",
+    "rating": 0,
+    "votes": 0,
+    "price": 569,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Pizza",
+    "description": "Get any Non Veg Medium Pizza from the delight/signature/supreme range, 2 pc. Cheese Garlic Bread & a Pepsi FREE!"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/be3/ca7df89f4cbf23526d4a440eb6ad2be3.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chatpata Chicken Feast",
+    "rating": 0,
+    "votes": 0,
+    "price": 209,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Pizza",
+    "description": "Pizza topped with a spicy tandoori sauce, schezwan chicken meatballs, crunchy onion & capsisum, green chilli, juicy tomato and cheesy dressing."
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/f6a/e78d81ed5683abbe9a799c0dedec0f6a.png?fit=around|130:130&crop=130:130;*,*",
+    "name": "Belgian Chocolate Mousse Cake (Half Kg)",
+    "rating": 4.1,
+    "votes": 93,
+    "price": 600,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Bakery",
+    "description": "Here To Add That YUM Factor To Your Mousse Cake Cravings"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/737/7f6edde625481bb32c1e83c7a1336737.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Brownie Baked Cheesecake",
+    "rating": 4.1,
+    "votes": 25,
+    "price": 850,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Bakery",
+    "description": "Brownie baked cheesecake to beat days that seem super?downie"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/f50/2eb95ddf66ce264fe6efa436ed352f50.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Tiramisu Cake",
+    "rating": 4.2,
+    "votes": 36,
+    "price": 850,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Bakery",
+    "description": "Transporting You To The Streets Of Italy With Our Authentic Tiramisu Cake"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/8fe/49f9b4fb6dcbd0be4e2a2a81240dc8fe.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Dutch Truffle Cake [1/2kg]",
+    "rating": 4.5,
+    "votes": 41,
+    "price": 575,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Bakery",
+    "description": "Dark chocolate ganache with chocolate sponge."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/8f7/c6c4819fcc1a4a15dc2984803f7228f7.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Eggless Opium Cake [1/2kg]",
+    "rating": 4.5,
+    "votes": 16,
+    "price": 675,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Bakery",
+    "description": "A light chocolate cake topped with dark chocolate whipped cream."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/5c9/8f43488044792d94a36e0981b54c05c9.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Millionaire Brownie [1 Piece]",
+    "rating": 4.5,
+    "votes": 31,
+    "price": 110,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Bakery",
+    "description": "Soft buttery caramel sandwiched between our chocolate chip brownie and layer of dark chocolate truffle."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/686/cfab1cfd6fefa5db5bbdd47ff10db686.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Red Velvet Cake [1/2kg]",
+    "rating": 4.1,
+    "votes": 10,
+    "price": 675,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Bakery",
+    "description": "Red velvet sponge layered with cream cheese frosting enhanced with lime juice."
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/272/1d825e0c8ad120344a6e2f1f8e644272.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Whopper Jr Veg+ Crispy Veg.",
+    "rating": 4.1,
+    "votes": 318,
+    "price": 219,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Burger",
+    "description": "Our signature veg whopper in a smaller size + Crispy veg patty burger"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/d98/76cc60a03e91a4b91abaef5b4b849d98.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Whopper Jr Double Patty.",
+    "rating": 4.0,
+    "votes": 22,
+    "price": 219,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Burger",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/cf4/0e2bb4c9476cc80722668a79f412acf4.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Crispy Chicken + Med Fries.",
+    "rating": 4.0,
+    "votes": 77,
+    "price": 205,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Burger",
+    "description": "Crispy Chicken patty burger with fries on the side."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/839/c46b776ad01355eb77a0f14513124839.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Fireboltt Tandoori Paneer Burger",
+    "rating": 3.9,
+    "votes": 14,
+    "price": 239,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Burger",
+    "description": "Enjoy the fiery tandoori flavor in an irresistible combo of paneer patty, fresh veggies, and tandoori sauce packed between premium soft glazed buns."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/02a/9ed4c78bec7b8d1917e932790a2a302a.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Smoky Chipotle Chicken Burger",
+    "rating": 4.0,
+    "votes": 56,
+    "price": 189,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Burger",
+    "description": "Enjoy the balance of smoky, spicy, and mildly sweet flavor in this delight with a crunchy fried chicken fillet and chipotle sauce loaded with soft premium glazed buns."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/bc5/f5831b0aea0ff293d2009d516ad51bc5.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Netflix Special",
+    "rating": 0,
+    "votes": 0,
+    "price": 519,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Burger",
+    "description": "Peri Peri Fried Chicken Burger + African Peri Peri Regular + Pepsi 300 Ml"
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/570/2c308dd8a7cf00765d40fa72aeee0570.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Hyderabadi Paneer Biryani",
+    "rating": 4.3,
+    "votes": 117,
+    "price": 349,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Biryani",
+    "description": "A delightful mix of paneer & biryani rice in Hyderabadi Spices and served with Raita"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/599/90ee3fbbdf7c3987f0eacf4937deb599.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Dum Biryani Boneless Mini + Raita",
+    "rating": 4.0,
+    "votes": 168,
+    "price": 159,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Biryani",
+    "description": "Hyderabadi Chicken Biryani with boneless chicken pieces and served with Raita"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/385/b2eff837b810aaf26cd87f4ff4608385.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Aloo Sixty Five Hyderabadi Biryani",
+    "rating": 4.2,
+    "votes": 61,
+    "price": 319,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Biryani",
+    "description": "[Serves with Raita] Boiled potato marinated with magic of Indian spices and herbs, slowly cooked Between the aromatic long grained Basmati rice."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/f17/1ce94a6e02c3a953ea83a72bfabd2f17.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Sixty Five Hyderabadi Biryani",
+    "rating": 4.1,
+    "votes": 149,
+    "price": 409,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Biryani",
+    "description": "[Serves with Raita] Classic fusion of our lipsmacking chicken 65 and famous Hyderabadi Biryani."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/710/0ef8fc189470132d5383952889d77710.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Mutton Dum Hyderabadi Biryani",
+    "rating": 4.0,
+    "votes": 136,
+    "price": 479,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Biryani",
+    "description": "[Serves with Raita] Tenderly cooked pieces of mutton mixed with fragrant rice and tangy herbs to give you an absolutely spicy delight."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/77a/70033edf4e8ade8cab451efae1faa77a.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Lazeez Bhuna Murgh Biryani (Dum Chicken Biryani - Serves 1)",
+    "rating": 4.1,
+    "votes": 253,
+    "price": 389,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Biryani",
+    "description": "(Boneless, Served with 1 Gulab Jamun & Mint Raita) In this culinary jewel from Behrouz, Tender chicken pieces are marinated with exuberant bhuna spices that are freshly ground and dum pukht with aromatic rice."
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/4bc/2fc99a4e8aef34207ba4363ff01bf4bc.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Deluxe Thali [1 Plate]",
+    "rating": 4.0,
+    "votes": 176,
+    "price": 231,
+    "vegOrNonVeg": "veg",
+    "cuisine": "North Indian",
+    "description": "Dal Makhni+Shahi Paneer+Mix Veg+Chur Chur Naan+Aloo Pyaz Kulcha+Raita+Salad+Rice"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/4ec/e4a37c2e6830f9f865b9a23ba37b74ec.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Rajma Chawal",
+    "rating": 4.0,
+    "votes": 1023,
+    "price": 105,
+    "vegOrNonVeg": "veg",
+    "cuisine": "North Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/e2f/ccd020c5417b0b0845268679c36ede2f.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Amritsati Aloo Pyaz Kulcha Platter",
+    "rating": 4.0,
+    "votes": 93,
+    "price": 179,
+    "vegOrNonVeg": "veg",
+    "cuisine": "North Indian",
+    "description": "Dal Makhni+Chole+Raita+Two Kulcha+Salad"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/190/171ff16de74f44850da4f267a4b2f190.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Dal Makhani",
+    "rating": 4.1,
+    "votes": 84,
+    "price": 625,
+    "vegOrNonVeg": "veg",
+    "cuisine": "North Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/749/ea455dd2e48193b810463ba9f9593749.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Butter Chicken (Boneless)",
+    "rating": 4.2,
+    "votes": 280,
+    "price": 825,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "North Indian",
+    "description": "Boneless"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/5ba/7c7642f6bf428e354d7019b2863375ba.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Malai Kofta",
+    "rating": 4.2,
+    "votes": 15,
+    "price": 339,
+    "vegOrNonVeg": "veg",
+    "cuisine": "North Indian",
+    "description": "Irresistibly delicious melt in the mouth kofta's cooked in ghee filled with Kesar, Kaju, Khoya in a luscious, rich, and creamy gravy. You can't stop!"
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/b1c/fa582ec112fd00def9a70784eacecb1c.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Ultimate Chipotle Aloo Patty Wrap.",
+    "rating": 0,
+    "votes": 0,
+    "price": 129,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Rolls",
+    "description": "Crispy & flavourful aloo patty is amped up with a generous drizzle of chipotle mayo and then gently wrapped with crunchy onions in a supple paratha. Add this to your wrap-list right away. I Calories (Kcals): 888 I Carbs (Gms): 86 I Proteins (Gms): 11 I Fats (Gms): 56"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/33a/a5e074c567856350fb30a2537934b33a.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Cheesy Garlic Manchurian Wrap.",
+    "rating": 0,
+    "votes": 0,
+    "price": 199,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Rolls",
+    "description": "Crispy fried Manchurian tossed in a garlic sauce with sliced vegetables, & mayo are doused in cheesy sauce & wrapped in a flaky paratha. Get ready to feel the crunch and a world of exciting new flavours! I Calories (Kcals): 960 I Carbs (Gms): 85 I Proteins (Gms): 16 I Fats (Gms): 62"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/952/7b776e89e638ca82aa88beb1e0cfa952.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Tandoori Chicken Wrap",
+    "rating": 0,
+    "votes": 0,
+    "price": 281,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Rolls",
+    "description": "Cubes of perfectly cooked Tandoori chicken wrapped in a toasted tortilla stuffed with the goodness of Makhani mayo, lettuce and coleslaw"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/feb/70812e89bc6d63e101f30018ba146feb.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Tikka Roll",
+    "rating": 4.2,
+    "votes": 12,
+    "price": 240,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Rolls",
+    "description": "Chicken tikka topped with a mix of mint sauce and onion wrapped in a roomali"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/c07/d7fb731e54b646de2b24e8542e1fec07.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Paneer Tikka Roll",
+    "rating": 4.1,
+    "votes": 9,
+    "price": 200,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Rolls",
+    "description": "Paneer tikka topped with a mix of mint sauce and onion wrapped in a roomali"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/b8f/3319048778304a2190437f6bc5282b8f.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Double Egg Roll",
+    "rating": 4.2,
+    "votes": 113,
+    "price": 105,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Rolls",
+    "description": "Two eggs layered on choice of laccha paratha topped with salad onion, mint sauce, jalapeno mayo and chat masala. 181.78 Kcal /12.22gm Protein / 3.18gm Fat / 26.22gm Carbohydrates."
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/5cd/8f9137a6bae94a4d61fcc4fa1c3c15cd.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Burger Buddy Meal",
+    "rating": 4.2,
+    "votes": 11,
+    "price": 528.57,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chicken",
+    "description": "Save Rs. 40 & Share 2 Classic Chicken Zinger Burgers & a Medium Chicken Popcorn in this delightful combo for 2"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/659/b5fdab610f306acb664319a2031fa659.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Hot & Crispy Chicken-4pc",
+    "rating": 4.2,
+    "votes": 30,
+    "price": 428.57,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chicken",
+    "description": "Save Rs. 34 on 4 pc of signature Hot & Crispy Chicken at a deal price"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/b93/7b2190576f17d332ce07db8cd4b54b93.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Botti Kebab",
+    "rating": 4.1,
+    "votes": 20,
+    "price": 675,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chicken",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/0ea/02d061df8fbc5fc044653cb6a9b570ea.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Tandoori",
+    "rating": 4.2,
+    "votes": 51,
+    "price": 525,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chicken",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/749/ea455dd2e48193b810463ba9f9593749.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Butter Chicken (Boneless)",
+    "rating": 4.5,
+    "votes": 284,
+    "price": 825,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chicken",
+    "description": "Boneless"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/681/99a4978cc55defa2d734c907200ec681.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Tikka Masala",
+    "rating": 4.2,
+    "votes": 18,
+    "price": 410,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chicken",
+    "description": "Grilled chicken tikka cooked in a flavoursome gravy"
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/7e1/2774be09bd6b1b2f45508ceb350cb7e1.png?fit=around|130:130&crop=130:130;*,*",
+    "name": "Choley Bhature",
+    "rating": 4.0,
+    "votes": 163,
+    "price": 190,
+    "vegOrNonVeg": "veg",
+    "cuisine": "North Indian",
+    "description": "Chole Bhature is a beloved North Indian dish featuring crispy fried bhature bread with spiced chickpeas. Garnished with chilies, and coriander, it's served with mixed pickle and salad for a tangy kick."
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/71a/8a75a247ac92193e90c8275c4794271a.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Crunchy Mexican Sandwich",
+    "rating": 4.0,
+    "votes": 45,
+    "price": 279,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Sandwich",
+    "description": "Multigrain toasted Sub with Mexican bean patty, tomato, capsicum, onion, olives, jalapeño, southwest chipotle sauce & crunchy nachos. Serving size - 295 g/ 702 kcal. Allergens - Contains wheat, rye, barley, oats, milk & soy."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/7e6/4e7ea0e49b7802e14da0b6f7a1d067e6.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Teriyaki Sandwich",
+    "rating": 4.1,
+    "votes": 69,
+    "price": 292,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Sandwich",
+    "description": "Chicken strips glazed with teriyaki sauce, combined with your favourite veggies and topped with our signature sweet onion sauce served hot in a freshly baked bread of your choice. Serving size : 15 cm - 224 g / 311 kcal , 30 cm - 448 g / 622 kcal. Allergens - Contains wheat, rye, barley, oats, soy. Values include multigrain bread, lettuce, tomatoes, onions, green peppers and cucumbers."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/512/85751f7d55776916302e3338d035f512.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "3 Cheese Melt Sandwich + Side + Coke",
+    "rating": 4.0,
+    "votes": 45,
+    "price": 368,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Sandwich",
+    "description": "Enjoy your favourite Grills sandwich with a choice of drink and any choice of side."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/171/204443157f75689d5c83ea4d977ea171.png?fit=around|130:130&crop=130:130;*,*",
+    "name": "Vietnamese Barbecue Chicken Sandwich",
+    "rating": 4.2,
+    "votes": 103,
+    "price": 329,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Sandwich",
+    "description": "Vietnamese style sauteed chicken, multigrain bread, iceberg lettuce, tomato, onion, baby corn, broccoli, mushroom, napa lettuce, black olives, jalapenos, gherkins, cheese slice And drizzle with low-fat homemade sauces."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/a03/707919de228b879944c2371a8e501a03.png?fit=around|130:130&crop=130:130;*,*",
+    "name": "Veg Extravaganza Sandwich",
+    "rating": 4.0,
+    "votes": 56,
+    "price": 299,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Sandwich",
+    "description": "Multigrain bread, iceberg lettuce, cucumber, tomato, onion, baby corn, mushroom, broccoli, green capsicum, yellow capsicum, red capsicum, fresh paneer, black olives, jalapenos, And drizzle with low-fat homemade sauces."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/981/b2858d7352636abcf34cde9f30377981.png?fit=around|130:130&crop=130:130;*,*",
+    "name": "Punjabi Tawa Paneer Tikka Sandwich",
+    "rating": 4.1,
+    "votes": 16,
+    "price": 329,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Sandwich",
+    "description": "Punjabi tawa paneer tikka, multigrain bread, iceberg lettuce, tomato, onion, cucumber, red capsicum, yellow capsicum, green capsicum, black olives, jalapenos, And drizzle with low-fat homemade sauces."
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/716/e3085b89dc177c5483a223ab0e8de716.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Veg Hakka Noodles",
+    "rating": 4.1,
+    "votes": 135,
+    "price": 285,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Chinese",
+    "description": "Shredded vegetables and yellow noodles tossed in light soy"
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/762/7d38e78024befd2c1785abc72a66b762.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Noodle Soup With Burnt Garlic",
+    "rating": 4.0,
+    "votes": 6,
+    "price": 235,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Chinese",
+    "description": "A simple and delicious Chinese noodle soup, made with garlic-infused broth and noodles."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/762/7d38e78024befd2c1785abc72a66b762.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Chicken Thai Red Curry Meal",
+    "rating": 4.0,
+    "votes": 5,
+    "price": 415,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chinese",
+    "description": "Thai style coconut curry with choice of red curry."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/b54/c67353a6a553ff93d7f6334202bbcb54.jpg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Veg Garlic Chowmein",
+    "rating": 4.1,
+    "votes": 87,
+    "price": 250,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Chinese",
+    "description": "A scrumptious combo of aromatic veg garlic noodles served with veg chilli gravy and a spicy dip."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/663/ad7f37e58ddc674fe1890caf14c49663.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Dan Dan Noodles Chicken",
+    "rating": 4.1,
+    "votes": 87,
+    "price": 395,
+    "vegOrNonVeg": "nonVeg",
+    "cuisine": "Chinese",
+    "description": "Steamed noodles served with spicy minced chicken, scrambled egg & fresh coriander."
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/5fa/e058629baa93550392c2f2f0360165fa.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Paneer Momos",
+    "rating": 4.1,
+    "votes": 87,
+    "price": 325,
+    "vegOrNonVeg": "veg",
+    "cuisine": "Chinese",
+    "description": ""
+  },
+
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/c27/72dcd6803f6e917b04fef2c3cb432c27.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Plain Dosa",
+    "rating": 4.2,
+    "votes": 28,
+    "price": 199,
+    "vegOrNonVeg": "veg",
+    "cuisine": "South Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/0cd/03d8da2d8b295ae2984bea7922d810cd.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Podi Dosa",
+    "rating": 4.0,
+    "votes": 11,
+    "price": 219,
+    "vegOrNonVeg": "veg",
+    "cuisine": "South Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/537/1758b60db4189de78014606ade1a2537.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Idli (3 Pcs)",
+    "rating": 4.3,
+    "votes": 111,
+    "price": 189,
+    "vegOrNonVeg": "veg",
+    "cuisine": "South Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/89f/0ac66cbb2e1e3eac221586cf3441d89f.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Vada (2 Pcs) With Sambar",
+    "rating": 3.8,
+    "votes": 17,
+    "price": 219,
+    "vegOrNonVeg": "veg",
+    "cuisine": "South Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/528/654ce87b9a4c950837998d7bba978528.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Upma",
+    "rating": 4.2,
+    "votes": 53,
+    "price": 179,
+    "vegOrNonVeg": "veg",
+    "cuisine": "South Indian",
+    "description": ""
+  },
+  {
+    "imageUrl": "https://b.zmtcdn.com/data/dish_photos/b05/0ff64fcdd4240b0479fef300218d0b05.jpeg?fit=around|130:130&crop=130:130;*,*",
+    "name": "Vegetable Uttapam",
+    "rating": 3.9,
+    "votes": 34,
+    "price": 249,
+    "vegOrNonVeg": "veg",
+    "cuisine": "South Indian",
+    "description": ""
+  }
+]
