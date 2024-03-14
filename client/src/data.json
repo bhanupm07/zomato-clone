@@ -6,7 +6,7 @@
     "rating": 3.9,
     "diningRating": 3.3,
     "cuisine": ["Pizza", "Fast Food", "Italian"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 25,
     "safeDelivery": true
   },
@@ -17,7 +17,7 @@
     "rating": 4.3,
     "diningRating": 0,
     "cuisine": ["Bakery", "Desserts"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 29,
     "safeDelivery": false
   },
@@ -28,7 +28,7 @@
     "rating": 4.2,
     "diningRating": 3.7,
     "cuisine": ["Burger", "Fast Food", "Biryani", "Desserts", "Beverages"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 12,
     "safeDelivery": true
   },
@@ -39,7 +39,7 @@
     "rating": 4.3,
     "diningRating": 0,
     "cuisine": ["Biryani", "Kebab", "North Indian"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 33,
     "safeDelivery": true
   },
@@ -50,7 +50,7 @@
     "rating": 4.3,
     "diningRating": 3.7,
     "cuisine": ["Burger", "Wraps", "Fast Food", "Beverages"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 23,
     "safeDelivery": true
   },
@@ -61,7 +61,7 @@
     "rating": 4.1,
     "diningRating": 4.1,
     "cuisine": ["North Indian", "Mughlai", "Fast Food"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 38,
     "safeDelivery": true
   },
@@ -72,7 +72,7 @@
     "rating": 4.2,
     "diningRating": 2.7,
     "cuisine": ["North Indian", "Chinese", "Street Food", "Beverages"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 21,
     "safeDelivery": true
   },
@@ -83,7 +83,7 @@
     "rating": 4.0,
     "diningRating": 0,
     "cuisine": ["North Indian", "Chinese", "Fast Food", "Mughlai"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 25,
     "safeDelivery": true
   },
@@ -94,7 +94,7 @@
     "rating": 4.1,
     "diningRating": 4.4,
     "cuisine": ["Mexican", "Fast Food", "Wraps"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 19,
     "safeDelivery": true
   },
@@ -105,7 +105,7 @@
     "rating": 4.1,
     "diningRating": 3.9,
     "cuisine": ["North Indian", "Biryani", "Hyderabadi", "Andhra", "Mughlai"],
-    "costText": "₹250 for one",
+    "cost": 250,
     "deliveryTime": 18,
     "safeDelivery": true
   },
@@ -116,7 +116,7 @@
     "rating": 4.2,
     "diningRating": 3.6,
     "cuisine": ["Burger", "Shake", "Fast Food", "Desserts"],
-    "costText": "₹250 for one",
+    "cost": 250,
     "deliveryTime": 23,
     "safeDelivery": true
   },
@@ -127,7 +127,7 @@
     "rating": 4.1,
     "diningRating": 4.1,
     "cuisine": ["South Indian", "Biryani", "Andhra", "Desserts", "Beverages"],
-    "costText": "₹250 for one",
+    "cost": 250,
     "deliveryTime": 20,
     "safeDelivery": true
   },
@@ -138,7 +138,7 @@
     "rating": 4.2,
     "diningRating": 0,
     "cuisine": ["Pizza", "Fast Food"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 30,
     "safeDelivery": false
   },
@@ -149,7 +149,7 @@
     "rating": 3.9,
     "diningRating": 4.2,
     "cuisine": ["Pizza", "Pasta", "Cafe", "Italian", "Beverages"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 32,
     "safeDelivery": false
   },
@@ -167,7 +167,7 @@
       "Beverages",
       "Desserts"
     ],
-    "costText": "₹150 for one",
+    "cost": 150,
     "deliveryTime": 45,
     "safeDelivery": false
   },
@@ -178,7 +178,7 @@
     "rating": 4.2,
     "diningRating": 3.9,
     "cuisine": ["Biryani", "Hyderabadi", "Mughlai"],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 23,
     "safeDelivery": true
   },
@@ -189,7 +189,7 @@
     "rating": 4.3,
     "diningRating": 4.3,
     "cuisine": ["South Indian", "Desserts", "Juices", "Shake", "Beverages"],
-    "costText": "₹150 for one",
+    "cost": 150,
     "deliveryTime": 32,
     "safeDelivery": true
   },
@@ -200,7 +200,7 @@
     "rating": 4.0,
     "diningRating": 4.0,
     "cuisine": ["North Indian", "Desserts", "Mughlai", "Kebab", "Beverages"],
-    "costText": "₹150 for one",
+    "cost": 150,
     "deliveryTime": 26,
     "safeDelivery": true
   },
@@ -211,7 +211,7 @@
     "rating": 4.2,
     "diningRating": 0,
     "cuisine": ["North Indian"],
-    "costText": "₹150 for one",
+    "cost": 150,
     "deliveryTime": 22,
     "safeDelivery": true
   },
@@ -222,7 +222,7 @@
     "rating": 4.1,
     "diningRating": 2.9,
     "cuisine": ["Burger", "Coffee", "Beverages", "Fast Food"],
-    "costText": "₹350 for one",
+    "cost": 350,
     "deliveryTime": 28,
     "safeDelivery": false
   },
@@ -233,7 +233,7 @@
     "rating": 4.3,
     "diningRating": 3.9,
     "cuisine": ["Burger", "Sandwich", "Wraps", "Fast Food"],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 27,
     "safeDelivery": true
   },
@@ -244,7 +244,7 @@
     "rating": 4.1,
     "diningRating": 0,
     "cuisine": ["Burger", "American", "Fast Food"],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 40,
     "safeDelivery": true
   },
@@ -255,7 +255,7 @@
     "rating": 4.3,
     "diningRating": 0,
     "cuisine": ["Bakery"],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 17,
     "safeDelivery": true
   },
@@ -266,7 +266,7 @@
     "rating": 4.3,
     "diningRating": 3.9,
     "cuisine": ["Bakery", "Desserts", "Cake"],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 29,
     "safeDelivery": true
   },
@@ -277,7 +277,7 @@
     "rating": 4.4,
     "diningRating": 4.3,
     "cuisine": ["Bakery", "Desserts"],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 15,
     "safeDelivery": true
   },
@@ -288,7 +288,7 @@
     "rating": 4.2,
     "diningRating": 4.1,
     "cuisine": ["North Indian", "Mughlai", "Biryani", "Beverages", "Chicken"],
-    "costText": "₹450 for one",
+    "cost": 450,
     "deliveryTime": 37,
     "safeDelivery": true
   },
@@ -309,7 +309,7 @@
       "Asian",
       "Chicken"
     ],
-    "costText": "₹450 for one",
+    "cost": 450,
     "deliveryTime": 44,
     "safeDelivery": true
   },
@@ -328,7 +328,7 @@
       "Pizza",
       "Chicken"
     ],
-    "costText": "₹450 for one",
+    "cost": 450,
     "deliveryTime": 26,
     "safeDelivery": true
   },
@@ -339,7 +339,7 @@
     "rating": 4.1,
     "diningRating": 0,
     "cuisine": ["Rolls", "Wraps", "Shawarma"],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 24,
     "safeDelivery": true
   },
@@ -360,7 +360,7 @@
       "Pizza",
       "Rolls"
     ],
-    "costText": "₹200 for one",
+    "cost": 200,
     "deliveryTime": 21,
     "safeDelivery": false
   },
@@ -380,7 +380,7 @@
       "Beverages",
       "Desserts"
     ],
-    "costText": "₹250 for one",
+    "cost": 250,
     "deliveryTime": 25,
     "safeDelivery": true
   },
@@ -400,7 +400,7 @@
       "Beverages",
       "Desserts"
     ],
-    "costText": "₹250 for one",
+    "cost": 250,
     "deliveryTime": 33,
     "safeDelivery": false
   },
@@ -417,7 +417,7 @@
       "Fast Food",
       "Beverages"
     ],
-    "costText": "₹100 for one",
+    "cost": 100,
     "deliveryTime": 45,
     "safeDelivery": false
   },
@@ -428,7 +428,7 @@
     "rating": 3.8,
     "diningRating": 0,
     "cuisine": ["South Indian", "Chinese"],
-    "costText": "₹100 for one",
+    "cost": 100,
     "deliveryTime": 37,
     "safeDelivery": true
   },
@@ -446,7 +446,7 @@
       "Salad",
       "Beverages"
     ],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 17,
     "safeDelivery": true
   },
@@ -466,7 +466,7 @@
       "Continental",
       "Desserts"
     ],
-    "costText": "₹300 for one",
+    "cost": 300,
     "deliveryTime": 43,
     "safeDelivery": true
   },
@@ -477,7 +477,7 @@
     "rating": 4.1,
     "diningRating": 3.8,
     "cuisine": ["Chinese", "Thai", "Asian"],
-    "costText": "₹150 for one",
+    "cost": 150,
     "deliveryTime": 28,
     "safeDelivery": true
   },
@@ -488,7 +488,7 @@
     "rating": 4.2,
     "diningRating": 4.1,
     "cuisine": ["North Indian", "Chinese"],
-    "costText": "₹150 for one",
+    "cost": 150,
     "deliveryTime": 52,
     "safeDelivery": true
   }

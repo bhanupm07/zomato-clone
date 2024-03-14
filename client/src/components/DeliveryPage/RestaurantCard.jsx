@@ -12,7 +12,7 @@ const RestaurantCard = ({ data }) => {
     name,
     rating,
     cuisine,
-    costText,
+    cost,
     deliveryTime,
     safeDelivery,
   } = data;
@@ -42,7 +42,7 @@ const RestaurantCard = ({ data }) => {
 
       <section className="flex items-center font-light justify-between text-gray-500">
         <div>{getTruncatedStringFromArray(cuisine, 25)}</div>
-        <span>{costText}</span>
+        <span>₹{cost} for one</span>
       </section>
 
       <p className="flex justify-end py-3">{deliveryTime} min</p>

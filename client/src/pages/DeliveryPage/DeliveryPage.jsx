@@ -4,15 +4,17 @@ import FoodCarousel from "./FoodCarousel/FoodCarousel";
 import BrandCarousel from "./BrandCarousel/BrandCarousel";
 import DeliveryData from "./DeliveryData/DeliveryData";
 import FilterModal from "../../modals/FilterModal";
+import { useSelector } from "react-redux";
 
 const DeliveryPage = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const { filterCount } = useSelector((state) => state.filters);
 
   return (
     <div>
       <Filter isFilterOpen={isFilterOpen} setIsFilterOpen={setIsFilterOpen} />
-      <FoodCarousel />
-      <BrandCarousel />
+      {filterCount === 0 && <FoodCarousel />}
+      {filterCount === 0 && <BrandCarousel />}
       <DeliveryData />
       {isFilterOpen && (
         <FilterModal

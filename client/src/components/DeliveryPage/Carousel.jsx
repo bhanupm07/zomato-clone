@@ -1,13 +1,29 @@
 import React, { useState } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { handleCarouselClickThunk } from "../../store/thunks/handleCarouselClickThunk";
 
 const Carousel = ({ dataArray }) => {
   const [pointers, setPointers] = useState({ left: 0, right: 5 });
+  const dispatch = useDispatch();
+
+  const handleCarouselClick = (food) => {
+    if (food.type === "food") {
+      dispatch(handleCarouselClickThunk(food.name));
+    } else if (food.type === "brand") {
+      console.log(food.name);
+    }
+  };
 
   const renderedCarousel = dataArray.map((food, index) => {
     if (index >= pointers.left && index <= pointers.right) {
       return (
-        <div key={index} className="flex flex-col items-center gap-2 w-60 ">
+        <div
+          key={index}
+          id={food.name}
+          className="flex flex-col items-center gap-2 w-60 cursor-pointer"
+          onClick={() => handleCarouselClick(food)}
+        >
           <div className="rounded-full">
             <img
               src={food.img}

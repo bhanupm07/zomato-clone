@@ -7,7 +7,7 @@ const deliverySchema = new mongoose.Schema({
   rating: Number,
   diningRating: Number,
   cuisine: [String],
-  costText: String,
+  cost: Number,
   deliveryTime: Number,
   safeDelivery: Boolean,
 });

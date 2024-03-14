@@ -1,13 +1,21 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useThunk } from "../../../customHooks/useThunk";
 import { fetchAllDelivery } from "../../../store/thunks/fetchAllDelivery";
 import RestaurantCard from "../../../components/DeliveryPage/RestaurantCard";
 import { Spinner } from "@chakra-ui/react";
+import { handleFilter } from "../../../store";
 
 const DeliveryData = () => {
+  const dispatch = useDispatch();
   const location = useSelector((state) => state.location);
-  const deliveryRestaurants = useSelector((state) => state.delivery);
+  const { allDeliveryRestaurants, filteredRestaurants } = useSelector(
+    (state) => state.delivery
+  );
+  const filters = useSelector((state) => state.filters);
+  const { filterCount, cuisineSelected } = useSelector(
+    (state) => state.filters
+  );
   const [runFetchAllDeliveryThunk, _, isLoading, error] =
     useThunk(fetchAllDelivery);
 
@@ -15,13 +23,33 @@ const DeliveryData = () => {
     runFetchAllDeliveryThunk();
   }, []);
 
-  console.log(deliveryRestaurants);
+  console.log(filteredRestaurants);
 
-  const deliveryRestaurantsJsx = deliveryRestaurants.map(
-    (deliveryRestaurant) => {
-      return <RestaurantCard data={deliveryRestaurant} />;
-    }
-  );
+  const deliveryRestaurantsJsx =
+    filteredRestaurants.length === 0 && filterCount === 0 ? (
+      allDeliveryRestaurants.map((deliveryRestaurant) => {
+        return (
+          <RestaurantCard
+            key={deliveryRestaurant._id}
+            data={deliveryRestaurant}
+          />
+        );
+      })
+    ) : filteredRestaurants.length === 0 && filterCount > 0 ? (
+      <div>
+        <p>No such restaurants/cafes available.</p>
+        <p>Try applying different filters.</p>
+      </div>
+    ) : (
+      filteredRestaurants.map((deliveryRestaurant) => {
+        return (
+          <RestaurantCard
+            key={deliveryRestaurant._id}
+            data={deliveryRestaurant}
+          />
+        );
+      })
+    );
 
   return (
     <div className="px-20 py-8">
