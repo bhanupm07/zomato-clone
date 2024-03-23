@@ -4,15 +4,13 @@ dotenv.config({});
 
 const authMiddleware = (req, res, next) => {
   try {
-    let token = req.headeres["authorization"];
+    const token = req.headers.authorization;
     if (token) {
-      jwt.verify(token, process.env.jwtKey, (err, valid) => {
-        if (err) {
-          res.status(401).send("Please provide valid token");
-        } else {
-          next();
-        }
-      });
+      const decodedToken = jwt.verify(token, process.env.jwtKey);
+      // console.log(decodedToken);
+      const userId = decodedToken.userId;
+      req.userId = userId;
+      next();
     } else {
       res.status(403).send("Please add token with header");
     }

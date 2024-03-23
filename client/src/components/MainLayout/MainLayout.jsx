@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "../Footer";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import SignUpPage from "../../pages/SignUpPage/SignUpPage";
+import LoginPage from "../../pages/LoginPage/LoginPage";
 
 const MainLayout = () => {
   const location = useSelector((state) => state.location);
+  const [showSignupPage, setShowSignupPage] = useState(false);
+  const [showLoginPage, setShowLoginPage] = useState(false);
 
   return (
     <>
-      <Header />
+      <Header
+        showSignupPage={showSignupPage}
+        setShowSignupPage={setShowSignupPage}
+        showLoginPage={showLoginPage}
+        setShowLoginPage={setShowLoginPage}
+      />
 
       {location ? (
         <p className="text-gray-400 text-sm px-20 mt-5 tracking-wide capitalize">
@@ -121,6 +130,23 @@ const MainLayout = () => {
       <Outlet />
 
       <Footer />
+
+      {showSignupPage && (
+        <SignUpPage
+          showSignupPage={showSignupPage}
+          setShowSignupPage={setShowSignupPage}
+          showLoginPage={showLoginPage}
+          setShowLoginPage={setShowLoginPage}
+        />
+      )}
+      {showLoginPage && (
+        <LoginPage
+          showSignupPage={showSignupPage}
+          setShowSignupPage={setShowSignupPage}
+          showLoginPage={showLoginPage}
+          setShowLoginPage={setShowLoginPage}
+        />
+      )}
     </>
   );
 };

@@ -17,12 +17,14 @@ import {
   handleFilterCount,
   handleFilterCrossClick,
 } from "./slices/filterSlice";
+import { userReducer, clearUserDetails } from "./slices/userSlice";
 
 const store = configureStore({
   reducer: {
     location: locationReducer,
     delivery: deliveryReducer,
     filters: filterReducer,
+    user: userReducer,
   },
 });
 
@@ -39,6 +41,10 @@ export {
   handleCrossClick,
   handleClearAllAppliedFilters,
   handleFilterCrossClick,
+  clearUserDetails,
 };
 export * from "./thunks/fetchLocation";
 export * from "./thunks/fetchAllDelivery";
+export * from "./thunks/signupThunk";
+export * from "./thunks/fetchUserDetails";
+export * from "./thunks/loginThunk";

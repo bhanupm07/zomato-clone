@@ -39,7 +39,10 @@ const HomePage = () => {
           </div>
         </Link>
 
-        <div className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300">
+        <Link
+          to="/explore/dining"
+          className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
+        >
           <img
             src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
             alt="decoration"
@@ -49,9 +52,12 @@ const HomePage = () => {
             <h3 className="text-xl">Dining</h3>
             <p>View the city's favorite dining venues</p>
           </div>
-        </div>
+        </Link>
 
-        <div className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300">
+        <Link
+          to="/explore/night-life"
+          className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
+        >
           <img
             src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
             alt="decoration"
@@ -61,7 +67,7 @@ const HomePage = () => {
             <h3 className="text-xl">Nightlife and Clubs</h3>
             <p>Explore the city's top nightlife outlets</p>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="px-20">
