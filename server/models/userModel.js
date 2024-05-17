@@ -16,6 +16,19 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
     imageUrl: String,
+    description: String,
+    phone: Number,
+    cart: [
+      {
+        foodId: { type: mongoose.Schema.Types.ObjectId, ref: "food" },
+        quantity: Number,
+      },
+    ],
+    bookmarks: [
+      {
+        restaurantId: { type: mongoose.Schema.Types.ObjectId, ref: "delivery" },
+      },
+    ],
   },
   {
     timestamps: true,

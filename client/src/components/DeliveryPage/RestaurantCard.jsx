@@ -4,9 +4,11 @@ import {
   getTruncatedString,
   getTruncatedStringFromArray,
 } from "../../utils/utils";
+import { Link } from "react-router-dom";
 
 const RestaurantCard = ({ data }) => {
   const {
+    _id,
     imageUrl,
     discountText,
     name,
@@ -18,7 +20,10 @@ const RestaurantCard = ({ data }) => {
   } = data;
 
   return (
-    <main className="p-2 w-[350px] cursor-pointer rounded-2xl border border-transparent hover:border-inherit hover:shadow-lg">
+    <Link
+      to={`/explore/${_id}`}
+      className="p-2 w-[350px] cursor-pointer rounded-2xl border border-transparent hover:border-inherit hover:shadow-lg"
+    >
       <div className="relative w-full h-64">
         <img
           src={imageUrl}
@@ -57,7 +62,7 @@ const RestaurantCard = ({ data }) => {
           <p>Follows all Max Safety measures to ensure your food is safe</p>
         </div>
       )}
-    </main>
+    </Link>
   );
 };
 

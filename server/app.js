@@ -8,10 +8,12 @@ const authRouter = require("./routes/authRoutes");
 const deliveryRouter = require("./routes/deliveryRoutes");
 const userRouter = require("./routes/userRoutes");
 const authMiddleware = require("./middlewares/authMiddleware");
+const foodRouter = require("./routes/foodRoutes");
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/delivery", deliveryRouter);
 app.use("/api/v1/user", authMiddleware, userRouter);
+app.use("/api/v1/food", foodRouter);
 
 // app.get("/", async (req, res) => {
 //   try {

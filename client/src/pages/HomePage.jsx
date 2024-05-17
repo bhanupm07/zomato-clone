@@ -25,7 +25,7 @@ const HomePage = () => {
 
       <div className="flex items-center justify-center gap-5 px-20 pt-10 pb-24">
         <Link
-          to="/explore/delivery"
+          to="/explore/order/delivery"
           className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
         >
           <img
@@ -40,7 +40,7 @@ const HomePage = () => {
         </Link>
 
         <Link
-          to="/explore/dining"
+          to="/explore/order/dining"
           className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
         >
           <img
@@ -55,7 +55,7 @@ const HomePage = () => {
         </Link>
 
         <Link
-          to="/explore/night-life"
+          to="/explore/order/night-life"
           className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
         >
           <img

@@ -13,6 +13,8 @@ export default {
         insta:
           "url('https://b.zmtcdn.com/data/collections/ae71f4c72fda8a608a3650b15a994fdb_1696838475.jpg?output-format=webp')",
         cozy: "url('https://b.zmtcdn.com/data/collections/2022843bd23fe6c24f67cbea79836a4f_1704970294.png?output-format=webp')",
+        zomato:
+          "url('https://b.zmtcdn.com/data/cover_images/7dc92ec243c19684b2eaefd0050d656e1548144012.jpeg')",
       },
       colors: {
         primary: "#E23744",

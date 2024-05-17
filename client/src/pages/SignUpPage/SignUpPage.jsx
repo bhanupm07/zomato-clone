@@ -50,6 +50,7 @@ const SignUpPage = ({
       name: signUpDetails.name,
       email: signUpDetails.email,
       password: signUpDetails.password,
+      imageUrl: "",
     };
     runSignupThunk(infoObject);
     setShowSignupPage(!showSignupPage);

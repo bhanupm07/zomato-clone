@@ -4,14 +4,14 @@ import { useToast } from "@chakra-ui/react";
 
 const signupThunk = createAsyncThunk(
   "signup/registration",
-  async ({ name, email, password }) => {
+  async ({ name, email, password, imageUrl }) => {
     try {
       const response = await fetch(`${serverUrl}/api/v1/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, password }),
+        body: JSON.stringify({ name, email, password, imageUrl }),
       });
       const data = await response.json();
       localStorage.setItem("token", data.auth);

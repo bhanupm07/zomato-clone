@@ -18,6 +18,7 @@ import {
   handleFilterCrossClick,
 } from "./slices/filterSlice";
 import { userReducer, clearUserDetails } from "./slices/userSlice";
+import { foodReducer } from "./slices/foodSlice";
 
 const store = configureStore({
   reducer: {
@@ -25,6 +26,7 @@ const store = configureStore({
     delivery: deliveryReducer,
     filters: filterReducer,
     user: userReducer,
+    food: foodReducer,
   },
 });
 
@@ -48,3 +50,11 @@ export * from "./thunks/fetchAllDelivery";
 export * from "./thunks/signupThunk";
 export * from "./thunks/fetchUserDetails";
 export * from "./thunks/loginThunk";
+export * from "./thunks/fetchAllFoods";
+export * from "./thunks/addToCartThunk";
+export * from "./thunks/getCartThunk";
+export * from "./thunks/removeFromCart";
+export * from "./thunks/addToBookmarksThunk";
+export * from "./thunks/getBookmarksThunk";
+export * from "./thunks/removeFromBookmarksThunk";
+export * from "./thunks/updateUserDetailsThunk";

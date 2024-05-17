@@ -6,6 +6,11 @@ import MainLayout from "./components/MainLayout/MainLayout";
 import DiningPage from "./pages/DiningPage";
 import DeliveryPage from "./pages/DeliveryPage/DeliveryPage";
 import NightLifePage from "./pages/NightLifePage";
+import DeliveryRestaurantPage from "./pages/DeliveryRestaurant";
+import SecondaryLayout from "./components/SecondaryLayout";
+import CartPage from "./pages/CartPage/CartPage";
+import BookmarkPage from "./pages/BookmarkPage/BookmarkPage";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 
 const App = () => {
   return (
@@ -14,9 +19,15 @@ const App = () => {
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/explore" element={<MainLayout />}>
-          <Route path="delivery" element={<DeliveryPage />} />
-          <Route path="dining" element={<DiningPage />} />
-          <Route path="night-life" element={<NightLifePage />} />
+          <Route path="order" element={<SecondaryLayout />}>
+            <Route path="delivery" element={<DeliveryPage />} />
+            <Route path="dining" element={<DiningPage />} />
+            <Route path="night-life" element={<NightLifePage />} />
+          </Route>
+          <Route path="/explore/:cafeId" element={<DeliveryRestaurantPage />} />
+          <Route path="cart/:userId" element={<CartPage />} />
+          <Route path="bookmarks" element={<BookmarkPage />} />
+          <Route path="profile" element={<ProfilePage />} />
         </Route>
       </Routes>
     </>

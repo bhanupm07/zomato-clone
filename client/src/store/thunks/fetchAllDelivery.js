@@ -6,7 +6,7 @@ const fetchAllDelivery = createAsyncThunk("delivery/fetchAll", async () => {
     const response = await fetch(`${serverUrl}/api/v1/delivery`);
     const data = await response.json();
     if (response.ok) {
-      console.log(data.deliveryRestaurants);
+      // console.log(data.deliveryRestaurants);
       return data.deliveryRestaurants;
     } else {
       throw data;
