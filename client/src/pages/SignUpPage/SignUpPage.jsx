@@ -73,13 +73,13 @@ const SignUpPage = ({
 
   return (
     <>
-      <main className="bg-black/90 fixed inset-0 flex justify-center items-center">
+      <main className="bg-black/90 fixed inset-0 flex justify-center items-center z-10">
         <div className="bg-white flex flex-col p-6 rounded-lg w-1/2">
           <header className="flex justify-between items-center mb-6">
             <span className="text-3xl text-gray-700 font-medium">Signup</span>
             <ImCross
               onClick={() => setShowSignupPage(!showSignupPage)}
-              className="cursor-pointer"
+              className="cursor-pointer text-black"
             />
           </header>
 

@@ -3,20 +3,27 @@ import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import { HiCamera } from "react-icons/hi2";
+import { useThunk } from "../customHooks/useThunk";
+import { fetchUserDetails, updateUserDetailsThunk } from "../store";
 
 const EditProfileModal = ({
   isProfileModalVisible,
   setIsProfileModalVisible,
 }) => {
-  const { name, email, imageUrl } = useSelector((state) => state.user);
+  const { name, email, imageUrl, description, phone } = useSelector(
+    (state) => state.user
+  );
   const [formDetails, setFormDetails] = useState({
     imageUrl,
-    name: name,
-    email: email,
-    description: "",
-    phone: "",
+    name,
+    email,
+    description,
+    phone,
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [runUpdateDetailsThunk, _, isUpdating] = useThunk(
+    updateUserDetailsThunk
+  );
 
   const formData = [
     {
@@ -75,6 +82,14 @@ const EditProfileModal = ({
     }
   };
 
+  const handleUpdateButton = () => {
+    const argument = {
+      token: localStorage.getItem("token"),
+      updatedDetails: formDetails,
+    };
+    runUpdateDetailsThunk(argument);
+  };
+
   return (
     <main className="fixed inset-0 bg-black/70 flex justify-center items-center z-20">
       <div className="bg-white rounded-md w-1/3">
@@ -86,7 +101,7 @@ const EditProfileModal = ({
           />
         </div>
 
-        <div className="relative bg-zomato bg-center bg-cover flex items-center p-4 pt-8">
+        <div className="relative bg-zomato bg-center bg-cover flex flex-col items-start p-4 pt-8">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
           <label className="relative border-4 border-white rounded-full cursor-pointer">
             <input
@@ -113,6 +128,14 @@ const EditProfileModal = ({
               <HiCamera className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white p-2 text-4xl bg-black/60 rounded-full" />
             )}
           </label>
+          {formDetails.imageUrl ? (
+            <span
+              className="text-white text-xs underline cursor-pointer z-10"
+              onClick={() => setFormDetails({ ...formDetails, imageUrl: "" })}
+            >
+              Delete Image
+            </span>
+          ) : null}
         </div>
 
         <section className="p-6 flex flex-col gap-6">
@@ -143,8 +166,11 @@ const EditProfileModal = ({
           >
             Cancel
           </button>
-          <button className="w-36 border bg-primary text-white py-2 rounded-md">
-            Update
+          <button
+            onClick={handleUpdateButton}
+            className="w-36 border bg-primary text-white py-2 rounded-md"
+          >
+            {isUpdating ? <Spinner /> : "Update"}
           </button>
         </section>
       </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function getTruncatedString(str, num) {
-  if (str.length < num) {
+  if (str?.length < num) {
     return str;
   } else {
     return str.slice(0, num) + "...";

@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useThunk } from "../../customHooks/useThunk";
 import { clearUserDetails, fetchUserDetails } from "../../store";
 import { useDispatch, useSelector } from "react-redux";
-import { Avatar, useToast } from "@chakra-ui/react";
+import { Avatar, Spinner, useToast } from "@chakra-ui/react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 
@@ -51,12 +51,16 @@ const Header = ({
                 size="sm"
               />
             )}
-            <span
-              onClick={() => setIsDropdownVisible(!isDropdownVisible)}
-              className="capitalize font-medium"
-            >
-              {name}
-            </span>
+            {!isLoading ? (
+              <span
+                onClick={() => setIsDropdownVisible(!isDropdownVisible)}
+                className="capitalize font-medium"
+              >
+                {name}
+              </span>
+            ) : (
+              <Spinner />
+            )}
             {isDropdownVisible ? (
               <IoIosArrowUp
                 onClick={() => setIsDropdownVisible(!isDropdownVisible)}

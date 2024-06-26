@@ -6,7 +6,9 @@ import StoryModal from "../../modals/StoryModal";
 import EditProfileModal from "../../modals/EditProfileModal";
 
 const ProfilePage = () => {
-  const { name, imageUrl } = useSelector((state) => state.user);
+  const { name, description, phone, imageUrl } = useSelector(
+    (state) => state.user
+  );
   const [isProfileModalVisible, setIsProfileModalVisible] = useState(false);
 
   return (
@@ -18,11 +20,13 @@ const ProfilePage = () => {
             {!imageUrl ? (
               <Avatar size="2xl" />
             ) : (
-              <img src={imageUrl} alt="profile" />
+              <img src={imageUrl} className="w-36 rounded-full" alt="profile" />
             )}
           </div>
-          <div>
-            <span className="capitalize font-medium text-xl">{name}</span>
+          <div className="flex flex-col capitalize">
+            <span className="font-medium text-xl">{name}</span>
+            {description ? <span>{description}</span> : null}
+            {phone ? <span>{phone}</span> : null}
           </div>
         </section>
         <button

@@ -8,6 +8,7 @@ import { removeFromCart } from "../thunks/removeFromCart";
 import { addToBookmarksThunk } from "../thunks/addToBookmarksThunk";
 import { getBookmarksThunk } from "../thunks/getBookmarksThunk";
 import { removeFromBookmarksThunk } from "../thunks/removeFromBookmarksThunk";
+import { updateUserDetailsThunk } from "../thunks/updateUserDetailsThunk";
 
 const userSlice = createSlice({
   name: "user",
@@ -68,6 +69,9 @@ const userSlice = createSlice({
         cart,
         bookmarks,
       };
+    });
+    builder.addCase(updateUserDetailsThunk.fulfilled, (state, action) => {
+      return { ...state, ...action.payload.user };
     });
     builder.addCase(loginThunk.fulfilled, (state, action) => {
       // console.log(action.payload);
