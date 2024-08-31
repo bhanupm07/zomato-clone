@@ -44,7 +44,7 @@ const FoodCard = ({ food }) => {
     } else if (!localStorage.getItem("token")) {
       toast({
         title: "You must be logged in to add items to cart",
-        status: "error",
+        status: "info",
         duration: 3000,
         isClosable: true,
       });

@@ -11,7 +11,7 @@ import {
   removeFromBookmarksThunk,
 } from "../../store";
 import { BsBookmarkPlus, BsBookmarkCheckFill } from "react-icons/bs";
-import { Spinner } from "@chakra-ui/react";
+import { Spinner, useToast } from "@chakra-ui/react";
 import FoodCard from "../../components/DeliveryRestaurant/FoodCard";
 import { addToBookmarksThunk } from "../../store/thunks/addToBookmarksThunk";
 
@@ -33,6 +33,7 @@ const DeliveryRestaurantPage = () => {
   const location = useSelector((state) => state.location);
   const hasFetchedRef = useRef(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const toast = useToast();
 
   useEffect(() => {
     if (!hasFetchedRef.current) {
@@ -104,21 +105,31 @@ const DeliveryRestaurantPage = () => {
   }
 
   const handleBookmarkButton = () => {
-    if (isBookmarked) {
-      console.log("removing...");
-      const argument = {
-        userId,
-        restaurantId: restaurantData._id,
-        token: localStorage.getItem("token"),
-      };
-      runRemoveBookmarkThunk(argument);
+    if (localStorage.getItem("token")) {
+      if (isBookmarked) {
+        console.log("removing...");
+        const argument = {
+          userId,
+          restaurantId: restaurantData._id,
+          token: localStorage.getItem("token"),
+        };
+        runRemoveBookmarkThunk(argument);
+      } else {
+        const argument = {
+          userId,
+          restaurantId: restaurantData._id,
+          token: localStorage.getItem("token"),
+        };
+        runAddToBookmarkThunk(argument);
+      }
     } else {
-      const argument = {
-        userId,
-        restaurantId: restaurantData._id,
-        token: localStorage.getItem("token"),
-      };
-      runAddToBookmarkThunk(argument);
+      toast({
+        title: "Login or Signup Please",
+        description: "User should be logged in to perform this operation",
+        status: "info",
+        duration: 4000,
+        isClosable: true,
+      });
     }
   };
 
