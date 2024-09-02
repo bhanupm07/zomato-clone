@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
@@ -11,8 +11,32 @@ import SecondaryLayout from "./components/SecondaryLayout";
 import CartPage from "./pages/CartPage/CartPage";
 import BookmarkPage from "./pages/BookmarkPage/BookmarkPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import { useSelector } from "react-redux";
+import { useToast } from "@chakra-ui/react";
 
 const App = () => {
+  const user = useSelector((state) => state.user);
+  const toast = useToast();
+
+  useEffect(() => {
+    if (user.message && !user.name) {
+      toast({
+        title: user.message,
+        // description: "Please enter the right credentials",
+        status: "error",
+        duration: 4000,
+        isClosable: true,
+      });
+    } else if (user.name) {
+      toast({
+        title: "Signed up successfully",
+        status: "success",
+        duration: 4000,
+        isClosable: true,
+      });
+    }
+  }, [user]);
+
   return (
     <>
       <Routes>

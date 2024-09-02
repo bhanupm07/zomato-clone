@@ -1,10 +1,11 @@
 import { useToast } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ImCross } from "react-icons/im";
 import { PiEyeClosed } from "react-icons/pi";
 import { PiEye } from "react-icons/pi";
 import { useThunk } from "../../customHooks/useThunk";
 import { loginThunk } from "../../store";
+import { useSelector } from "react-redux";
 
 const LoginPage = ({
   showLoginPage,
@@ -18,7 +19,7 @@ const LoginPage = ({
     passwordVisibility: false,
   });
   const toast = useToast();
-  const [runLoginThunk, _, isLoading] = useThunk(loginThunk);
+  const [runLoginThunk, loginData, isLoading] = useThunk(loginThunk);
 
   const handleInputChange = (e) => {
     setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
@@ -51,12 +52,6 @@ const LoginPage = ({
       password: loginDetails.password,
     };
     runLoginThunk(infoObject);
-    toast({
-      title: "Signed up successfully",
-      status: "success",
-      duration: 4000,
-      isClosable: true,
-    });
     setShowLoginPage(!showLoginPage);
   };
 
