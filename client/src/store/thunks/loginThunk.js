@@ -13,9 +13,12 @@ const loginThunk = createAsyncThunk(
         body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
-      //   console.log(data);
-      localStorage.setItem("token", data.token);
-      return data.user;
+      console.log(data);
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        return data.user;
+      }
+      return data;
     } catch (error) {
       console.log(error);
     }

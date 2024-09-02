@@ -22,6 +22,7 @@ const userSlice = createSlice({
     phone: 0,
     cart: [],
     bookmarks: [],
+    message: "",
   },
   reducers: {
     clearUserDetails(state, action) {
@@ -35,6 +36,7 @@ const userSlice = createSlice({
         phone: 0,
         cart: [],
         bookmarks: [],
+        message: "",
       };
     },
   },
@@ -85,6 +87,7 @@ const userSlice = createSlice({
         phone,
         cart,
         bookmarks,
+        message,
       } = action.payload;
       return {
         ...state,
@@ -97,6 +100,7 @@ const userSlice = createSlice({
         phone,
         cart,
         bookmarks,
+        message,
       };
     });
     builder.addCase(addToCartThunk.fulfilled, (state, action) => {

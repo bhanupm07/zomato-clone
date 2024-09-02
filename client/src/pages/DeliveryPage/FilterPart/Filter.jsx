@@ -45,8 +45,8 @@ const Filter = ({ isFilterOpen, setIsFilterOpen }) => {
           </div>
         );
       })}
-      <FilterComponent text="Rating: 4.0+" />
-      <FilterComponent text="Pure Veg" />
+      {/* <FilterComponent text="Rating: 4.0+" />
+      <FilterComponent text="Pure Veg" /> */}
     </div>
   );
 };
