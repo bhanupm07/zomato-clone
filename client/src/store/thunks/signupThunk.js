@@ -14,9 +14,12 @@ const signupThunk = createAsyncThunk(
         body: JSON.stringify({ name, email, password, imageUrl }),
       });
       const data = await response.json();
-      localStorage.setItem("token", data.auth);
-      //   console.log(data);
-      return data.result;
+      if (data.auth) {
+        localStorage.setItem("token", data.auth);
+        return data.result;
+      }
+      // console.log(data);
+      return data;
     } catch (error) {
       console.log(error);
       throw error;
