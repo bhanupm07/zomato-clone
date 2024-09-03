@@ -20,8 +20,12 @@ const DeliveryData = () => {
     useThunk(fetchAllDelivery);
 
   useEffect(() => {
-    runFetchAllDeliveryThunk();
-  }, []);
+    if (filters.filterCount) {
+      dispatch(handleFilter(filters));
+    } else {
+      runFetchAllDeliveryThunk();
+    }
+  }, [filters]);
 
   console.log(filteredRestaurants);
 
