@@ -14,77 +14,91 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-      <div className="flex flex-col items-center bg-bgImage text-white pb-24">
+      <div className="flex flex-col items-center bg-bgImage text-white pb-24 max-[500px]:pb-12">
         <SecondaryHeader />
-        <img src={logo} alt="zomato logo" className="w-96" />
-        <p className="text-4xl pb-6">
+        <img src={logo} alt="zomato logo" className="w-96 max-[500px]:w-44" />
+        <p className="text-4xl pb-6 max-[500px]:text-2xl text-center max-[500px]:px-7 max-[500px]:font-semibold">
           Discover the best food & drinks in Delhi NCR
         </p>
         <SearchBar />
       </div>
 
-      <div className="flex items-center justify-center gap-5 px-20 pt-10 pb-24">
+      <div className="flex max-[500px]:flex-wrap items-center justify-center max-[500px]:justify-start gap-5 px-20 pt-10 pb-24 max-[500px]:pb-12 max-[500px]:px-7">
         <Link
           to="/explore/order/delivery"
-          className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
+          className="custom-div h-56 max-[500px]:h-60 max-[500px]:w-[47%] flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
         >
           <img
             src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
             alt="decoration"
-            className="h-[65%] object-cover w-96"
+            className="h-[65%] max-[500px]:h-auto object-cover w-96 max-[500px]:w-full"
           />
-          <div className="px-6 py-3">
-            <h3 className="text-xl">Order Online</h3>
-            <p>Stay home and order to your doorstep</p>
+          <div className="px-6 py-3 max-[500px]:px-3">
+            <h3 className="text-xl max-[500px]:text-base max-[500px]:font-semibold">
+              Order Online
+            </h3>
+            <p className="max-[500px]:text-xs">
+              Stay home and order to your doorstep
+            </p>
           </div>
         </Link>
 
         <Link
           to="/explore/order/dining"
-          className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
+          className="custom-div h-56 max-[500px]:h-60 max-[500px]:w-[47%] flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
         >
           <img
             src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
             alt="decoration"
-            className="h-[65%] object-cover w-96"
+            className="h-[65%] max-[500px]:h-auto object-cover w-96 max-[500px]:w-full"
           />
-          <div className="px-6 py-3">
-            <h3 className="text-xl">Dining</h3>
-            <p>View the city's favorite dining venues</p>
+          <div className="px-6 py-3 max-[500px]:px-3">
+            <h3 className="text-xl max-[500px]:text-base max-[500px]:font-semibold">
+              Dining
+            </h3>
+            <p className="max-[500px]:text-xs">
+              View the city's favorite dining venues
+            </p>
           </div>
         </Link>
 
         <Link
           to="/explore/order/night-life"
-          className="custom-div h-56 flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
+          className="custom-div h-56 max-[500px]:h-60 max-[500px]:w-[47%] flex flex-col rounded-xl overflow-hidden border-[0.5px] border-gray-300"
         >
           <img
             src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
             alt="decoration"
-            className="h-[65%] object-cover w-96"
+            className="h-[65%] max-[500px]:h-auto object-cover w-96 max-[500px]:w-full"
           />
-          <div className="px-6 py-3">
-            <h3 className="text-xl">Nightlife and Clubs</h3>
-            <p>Explore the city's top nightlife outlets</p>
+          <div className="px-6 py-3 max-[500px]:px-3">
+            <h3 className="text-xl max-[500px]:text-base max-[500px]:font-semibold">
+              Nightlife and Clubs
+            </h3>
+            <p className="max-[500px]:text-xs">
+              Explore the city's top nightlife outlets
+            </p>
           </div>
         </Link>
       </div>
 
-      <div className="px-20">
-        <h2 className="text-4xl font-medium">Collections</h2>
-        <div className="flex items-center justify-between py-3">
-          <p className="text-xl">
+      <div className="px-20 max-[500px]:px-7">
+        <h2 className="text-4xl max-[500px]:text-2xl font-medium">
+          Collections
+        </h2>
+        <div className="flex items-center justify-between py-3 max-[500px]:pt-1">
+          <p className="text-xl max-[500px]:text-sm">
             Explore curated lists of top restaurants, cafes, pubs, and bars in
             Delhi NCR, based on trends
           </p>
-          <span className="text-lg text-primary flex items-center gap-1">
+          <span className="text-lg text-primary flex items-center gap-1 max-[500px]:hidden">
             All collections in Delhi NCR{" "}
             <IoMdArrowDropright className="text-xl" />
           </span>
         </div>
 
-        <div className="text-white flex gap-3 w-full pt-6 pb-24">
-          <div className="relative h-80 rounded-lg overflow-hidden w-1/4">
+        <div className="text-white flex max-[500px]:flex-wrap gap-3 w-full pt-6 pb-24 max-[500px]:pb-12">
+          <div className="relative h-80 rounded-lg overflow-hidden w-1/4 max-[500px]:w-[48%] max-[500px]:h-60">
             <div>
               <img
                 src="https://b.zmtcdn.com/data/collections/2deab8e9f06ff125e80f5cc09f11e4d7_1674569132.jpg?output-format=webp"
@@ -93,14 +107,16 @@ const HomePage = () => {
               />
             </div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-lg">Unique Dining Experiences</h3>
-              <span className="flex items-center">
+              <h3 className="text-lg max-[500px]:text-sm">
+                Unique Dining Experiences
+              </h3>
+              <span className="flex items-center max-[500px]:text-sm">
                 11 places <IoMdArrowDropright />
               </span>
             </div>
           </div>
 
-          <div className="relative h-80 rounded-lg overflow-hidden w-1/4">
+          <div className="relative h-80 rounded-lg overflow-hidden w-1/4 max-[500px]:w-[48%] max-[500px]:h-60">
             <div>
               <img
                 src="https://b.zmtcdn.com/data/collections/0a4f52d9dc95cf3a5d3cf05f2299c1bf_1704348957.png?output-format=webp"
@@ -109,14 +125,16 @@ const HomePage = () => {
               />
             </div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-lg">Hot Chocolate Havens</h3>
-              <span className="flex items-center">
+              <h3 className="text-lg max-[500px]:text-sm">
+                Hot Chocolate Havens
+              </h3>
+              <span className="flex items-center max-[500px]:text-sm">
                 22 places <IoMdArrowDropright />
               </span>
             </div>
           </div>
 
-          <div className="relative h-80 rounded-lg overflow-hidden w-1/4">
+          <div className="relative h-80 rounded-lg overflow-hidden w-1/4 max-[500px]:w-[48%] max-[500px]:h-60">
             <div>
               <img
                 src="https://b.zmtcdn.com/data/collections/ae71f4c72fda8a608a3650b15a994fdb_1696838475.jpg?output-format=webp"
@@ -125,14 +143,16 @@ const HomePage = () => {
               />
             </div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-lg">Best Insta-worthy Places</h3>
-              <span className="flex items-center">
+              <h3 className="text-lg max-[500px]:text-sm">
+                Best Insta-worthy Places
+              </h3>
+              <span className="flex items-center max-[500px]:text-sm">
                 21 places <IoMdArrowDropright />
               </span>
             </div>
           </div>
 
-          <div className="relative h-80 rounded-lg overflow-hidden w-1/4">
+          <div className="relative h-80 rounded-lg overflow-hidden w-1/4 max-[500px]:w-[48%] max-[500px]:h-60">
             <div>
               <img
                 src="https://b.zmtcdn.com/data/collections/2022843bd23fe6c24f67cbea79836a4f_1704970294.png?output-format=webp"
@@ -141,24 +161,28 @@ const HomePage = () => {
               />
             </div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-lg">Cozy Heated Outdoors</h3>
-              <span className="flex items-center">
+              <h3 className="text-lg max-[500px]:text-sm">
+                Cozy Heated Outdoors
+              </h3>
+              <span className="flex items-center max-[500px]:text-sm">
                 20 places <IoMdArrowDropright />
               </span>
             </div>
           </div>
         </div>
 
-        <div className="w-full mb-28">
-          <h3 className="text-4xl mb-10">
+        <div className="w-full mb-28 max-[500px]:mb-12">
+          <h3 className="text-4xl mb-10 max-[500px]:mb-6 max-[500px]:text-2xl">
             Popular localities in and around{" "}
             <span className="font-medium">Delhi NCR</span>
           </h3>
           <LocalityCard />
         </div>
 
-        <div className="mb-16">
-          <h3 className="text-3xl mb-6">Explore options near me</h3>
+        <div className="mb-16 max-[500px]:mb-12">
+          <h3 className="text-3xl mb-6 max-[500px]:text-2xl">
+            Explore options near me
+          </h3>
           <DropdownComponent />
         </div>
       </div>
@@ -187,10 +211,10 @@ function LocalityCard() {
     return (
       <div
         key={index}
-        className="flex items-center justify-between p-3 border rounded-md w-[32%] shadow hover:shadow-lg cursor-pointer"
+        className="flex items-center justify-between p-3 border rounded-md w-[32%] max-[500px]:w-full shadow hover:shadow-lg cursor-pointer"
       >
         <div>
-          <h3 className="text-xl">{item.name}</h3>
+          <h3 className="text-xl max-[500px]:text-base">{item.name}</h3>
           <p>{item.places} places</p>
         </div>
         <MdKeyboardArrowRight className="text-xl" />
@@ -214,7 +238,9 @@ function DropdownComponent() {
           className="flex items-center justify-between  cursor-pointer p-4"
           onClick={() => setFirstDropDown(!firstDropDown)}
         >
-          <p className="text-xl">Popular cuisines near me</p>
+          <p className="text-xl max-[500px]:text-base">
+            Popular cuisines near me
+          </p>
           {firstDropDown ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </div>
         {firstDropDown && (
@@ -233,7 +259,9 @@ function DropdownComponent() {
           className="p-4 flex items-center justify-between  cursor-pointer"
           onClick={() => setSecondDropDown(!secondDropDown)}
         >
-          <p className="text-xl">Popular restaurant types near me</p>
+          <p className="text-xl max-[500px]:text-base">
+            Popular restaurant types near me
+          </p>
           {secondDropDown ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </div>
         {secondDropDown && (
@@ -255,11 +283,11 @@ function DropdownComponent() {
           className="p-4 flex items-center justify-between  cursor-pointer"
           onClick={() => setThirdDropDown(!thirdDropDown)}
         >
-          <p className="text-xl">Top Restaurant Chains</p>
+          <p className="text-xl max-[500px]:text-base">Top Restaurant Chains</p>
           {thirdDropDown ? <IoIosArrowUp /> : <IoIosArrowDown />}
         </div>
         {thirdDropDown && (
-          <div className="mt-2 text-gray-400 flex gap-20 flex-wrap p-4">
+          <div className="mt-2 text-gray-400 flex gap-20 max-[500px]:gap-10 flex-wrap p-4">
             <div className="flex flex-col gap-2">
               <p>Bikanerwala</p>
               <p>Domino's</p>

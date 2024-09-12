@@ -62,12 +62,16 @@ const DeliveryData = () => {
       </h2>
       <div className="flex flex-wrap justify-center gap-6">
         {isLoading ? (
-          <Spinner
-            size="xl"
-            color="red.400"
-            thickness="5px"
-            emptyColor="gray.200"
-          />
+          <main className="flex flex-col items-center">
+            <Spinner
+              size="xl"
+              color="red.400"
+              thickness="5px"
+              emptyColor="gray.200"
+            />
+            <p className="mt-6">Please wait for sometime</p>
+            <p>You know 'render' takes time</p>
+          </main>
         ) : (
           deliveryRestaurantsJsx
         )}

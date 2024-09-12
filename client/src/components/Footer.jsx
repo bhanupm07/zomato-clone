@@ -11,7 +11,7 @@ import india from "../assets/india.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#F8F8F8] px-20 pb-8 text-gray-500">
+    <div className="bg-[#F8F8F8] px-20 max-[500px]:px-7 pb-8 text-gray-500">
       <div className="flex justify-between py-10">
         <img src={logo} alt="logo" className=" ml-[-12px] w-40" />
         <div className="flex items-center gap-2 p-2 border border-gray-400 rounded">
@@ -19,9 +19,9 @@ const Footer = () => {
           <span className="text-black">India</span>
         </div>
       </div>
-      <div className="flex gap-20 flex-wrap">
-        <div className="flex flex-col gap-1 text-sm tracking-wide">
-          <h4 className="font-medium text-black tracking-widest text-base mb-2">
+      <div className="flex gap-20 max-[500px]:gap-10 flex-wrap">
+        <div className="flex flex-col gap-1 text-sm max-[500px]:text-xs tracking-wide">
+          <h4 className="font-medium text-black tracking-widest text-base max-[500px]:text-sm mb-2">
             ABOUT ZOMATO
           </h4>
           <span>Who We Are</span>
@@ -32,8 +32,8 @@ const Footer = () => {
           <span>Press Kit</span>
           <span>Contact Us</span>
         </div>
-        <div className="flex flex-col gap-1 text-sm tracking-wide">
-          <h4 className="font-medium text-black tracking-widest text-base mb-2">
+        <div className="flex flex-col gap-1 text-sm max-[500px]:text-xs tracking-wide">
+          <h4 className="font-medium text-black tracking-widest text-base max-[500px]:text-sm mb-2">
             ZOMAVERSE
           </h4>
           <span>Zomato</span>
@@ -43,22 +43,22 @@ const Footer = () => {
           <span>Zomaland</span>
         </div>
         <div>
-          <div className="flex flex-col gap-1 text-sm tracking-wide mb-6">
-            <h4 className="font-medium text-black tracking-widest text-base mb-2">
+          <div className="flex flex-col gap-1 text-sm max-[500px]:text-xs tracking-wide mb-6">
+            <h4 className="font-medium text-black tracking-widest text-base max-[500px]:text-sm mb-2">
               FOR RESTAURANTS
             </h4>
             <span>Partner With Us</span>
             <span>Apps For You</span>
           </div>
-          <div className="flex flex-col gap-1 text-sm tracking-wide">
-            <h4 className="font-medium text-black tracking-widest text-base mb-2">
+          <div className="flex flex-col gap-1 text-sm max-[500px]:text-xs tracking-wide">
+            <h4 className="font-medium text-black tracking-widest text-base max-[500px]:text-sm mb-2">
               FOR ENTERPRISES
             </h4>
             <span>Zomato For Enterprise</span>
           </div>
         </div>
-        <div className="flex flex-col gap-1 text-sm tracking-wide">
-          <h4 className="font-medium text-black tracking-widest text-base mb-2">
+        <div className="flex flex-col gap-1 text-sm max-[500px]:text-xs tracking-wide">
+          <h4 className="font-medium text-black tracking-widest text-base max-[500px]:text-sm mb-2">
             LEARN MORE
           </h4>
           <span>Privacy</span>
@@ -66,8 +66,8 @@ const Footer = () => {
           <span>Terms</span>
           <span>Sitemap</span>
         </div>
-        <div className="flex flex-col gap-1 text-sm tracking-wide">
-          <h4 className="font-medium text-black tracking-widest text-base mb-2">
+        <div className="flex flex-col gap-1 text-sm max-[500px]:text-xs tracking-wide">
+          <h4 className="font-medium text-black tracking-widest text-base max-[500px]:text-sm mb-2">
             SOCIAL LINKS
           </h4>
           <div className="flex gap-2 text-xl">
@@ -80,9 +80,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <hr className="mt-16 mb-6 h-[1px] bg-gray-400" />
+      <hr className="mt-16 max-[500px]:mt-10 mb-6 h-[1px] bg-gray-400" />
 
-      <p className="text-sm tracking-wide">
+      <p className="text-sm max-[500px]:text-xs tracking-wide">
         By continuing past this page, you agree to our Terms of Service, Cookie
         Policy, Privacy Policy and Content Policies. All trademarks are
         properties of their respective owners, 2008-2024 © Zomato™ Ltd. All
