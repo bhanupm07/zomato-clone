@@ -96,16 +96,20 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="flex gap-2 items-center bg-white p-4 rounded-lg text-black w-[55%] relative shadow">
+    <div className="flex gap-2 items-center bg-white p-4 rounded-lg text-black w-[55%] relative shadow max-[500px]:w-[90%]">
       {isLoading ? (
         <Spinner size="sm" color="red.400" />
       ) : (
-        <img src={locationSvg} alt="decoration" />
+        <img
+          src={locationSvg}
+          alt="decoration"
+          className="max-[500px]:hidden"
+        />
       )}
       <input
         type="text"
         placeholder="Detect Location"
-        className="outline-none text-sm capitalize text-gray-400"
+        className="outline-none text-sm capitalize text-gray-400 max-[500px]:hidden"
         value={location}
         onChange={(e) =>
           dispatch({ type: "location/handleChange", payload: e.target.value })
@@ -113,16 +117,16 @@ const SearchBar = () => {
       />
       {locationModal ? (
         <TiArrowSortedUp
-          className="cursor-pointer"
+          className="cursor-pointer max-[500px]:hidden"
           onClick={() => setLocationModal(!locationModal)}
         />
       ) : (
         <TiArrowSortedDown
-          className="cursor-pointer"
+          className="cursor-pointer max-[500px]:hidden"
           onClick={() => setLocationModal(!locationModal)}
         />
       )}
-      <div className="text-gray-400">|</div>
+      <div className="text-gray-400 max-[500px]:hidden">|</div>
       <CiSearch className="text-2xl text-gray-500" />
       <input
         type="text"
@@ -147,7 +151,7 @@ const SearchBar = () => {
       {restaurantsMatched.length && searchTerm.length && isSearchModal ? (
         <div
           ref={modalRef}
-          className="absolute top-16 right-0 bg-white border border-gray-200 h-[300px] w-[420px] overflow-y-scroll z-50 shadow-2xl rounded-xl py-2"
+          className="absolute top-16 right-0 bg-white border border-gray-200 h-[300px] w-[420px] max-[500px]:w-[95%] overflow-y-scroll z-50 shadow-2xl rounded-xl py-2"
         >
           {restaurantsMatched.map((obj) => {
             return (

@@ -25,7 +25,7 @@ const SecondaryHeader = () => {
   }, []);
 
   return (
-    <div className="flex justify-between px-12 py-6 w-full">
+    <div className="flex justify-between px-12 py-6 w-full max-[500px]:px-4 max-[500px]:py-4">
       <div className="flex gap-2 items-center cursor-pointer">
         <img src={appLogo} alt="app logo" />
         <p className="text-sm">App Coming soon</p>
@@ -49,12 +49,14 @@ const SecondaryHeader = () => {
             {!isLoading ? (
               <span
                 onClick={() => setIsDropdownVisible(!isDropdownVisible)}
-                className="capitalize font-medium"
+                className="capitalize font-medium max-[500px]:hidden"
               >
                 {name}
               </span>
             ) : (
-              <Spinner />
+              <div className="max-[500px]:hidden">
+                <Spinner />
+              </div>
             )}
             {isDropdownVisible ? (
               <IoIosArrowUp
@@ -74,7 +76,7 @@ const SecondaryHeader = () => {
           </div>
           <Link
             to={`/explore/cart/${userId}`}
-            className="relative cursor-pointer hover:scale-110"
+            className="relative cursor-pointer hover:scale-110 max-[500px]:hidden"
           >
             <IoCartOutline className="text-primary text-2xl" />
             <span className="absolute -top-1 -right-1 text-[8px] bg-primary text-white rounded-full w-3 h-3 flex justify-center items-center">
@@ -83,7 +85,7 @@ const SecondaryHeader = () => {
           </Link>
         </section>
       ) : (
-        <div className="flex items-center gap-6 text-lg">
+        <div className="flex items-center gap-6 text-lg max-[500px]:text-sm">
           <span
             onClick={() => setShowLoginPage(!showLoginPage)}
             className="cursor-pointer"
