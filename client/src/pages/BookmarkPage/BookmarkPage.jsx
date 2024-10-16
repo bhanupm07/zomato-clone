@@ -28,7 +28,7 @@ const BookmarkPage = () => {
   });
 
   return (
-    <main className="mx-20 mt-5 py-5 border-t">
+    <main className="mx-20 max-[500px]:mx-7 mt-5 py-5 border-t">
       <h2 className="text-3xl font-semibold mb-4">Bookmarks</h2>
       {isLoading ? (
         <Spinner color="red.500" emptyColor="gray.100" />

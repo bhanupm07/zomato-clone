@@ -12,26 +12,36 @@ const ProfilePage = () => {
   const [isProfileModalVisible, setIsProfileModalVisible] = useState(false);
 
   return (
-    <main className="my-2 border-t mx-20">
-      <div className="relative bg-zomato bg-center bg-cover text-white flex justify-between items-center p-6 py-10">
+    <main className="my-2 border-t mx-20 max-[500px]:mx-7">
+      <div className="relative bg-zomato bg-center bg-cover text-white flex justify-between items-center p-6 max-[500px]:px-3 py-10">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-        <section className="flex items-center gap-4 z-10">
+        <section className="flex items-center gap-4 max-[500px]:gap-2 z-10">
           <div className="border-4 border-white rounded-full">
             {!imageUrl ? (
               <Avatar size="2xl" />
             ) : (
-              <img src={imageUrl} className="w-36 rounded-full" alt="profile" />
+              <img
+                src={imageUrl}
+                className="w-36 max-[500px]:w-20 rounded-full"
+                alt="profile"
+              />
             )}
           </div>
           <div className="flex flex-col capitalize">
-            <span className="font-medium text-xl">{name}</span>
-            {description ? <span>{description}</span> : null}
-            {phone ? <span>{phone}</span> : null}
+            <span className="font-medium text-xl max-[500px]:text-lg">
+              {name}
+            </span>
+            {description ? (
+              <span className="max-[500px]:text-sm">{description}</span>
+            ) : null}
+            {phone ? (
+              <span className="max-[500px]:text-sm">{phone}</span>
+            ) : null}
           </div>
         </section>
         <button
           onClick={() => setIsProfileModalVisible(!isProfileModalVisible)}
-          className="flex items-center gap-2 p-2 px-4 bg-[#EF4F5F] text-white rounded-md z-10"
+          className="flex items-center max-[500px]:text-sm gap-2 p-2 px-4 bg-[#EF4F5F] text-white rounded-md z-10"
         >
           <FaRegEdit className="text-xs" />
           <span>Edit Profile</span>

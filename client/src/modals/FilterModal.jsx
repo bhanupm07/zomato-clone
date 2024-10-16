@@ -79,7 +79,7 @@ const FilterModal = ({ isFilterOpen, setIsFilterOpen }) => {
 
   return (
     <main className="fixed inset-0 bg-black/60 flex justify-center items-center">
-      <div className="bg-white w-[50%] rounded-lg h-[90%]">
+      <div className="bg-white w-[50%] max-[500px]:w-[90%] rounded-lg h-[90%]">
         <header className="flex justify-between items-center text-2xl font-medium border-b p-4">
           <span className="">Filters</span>
           <RxCross2
@@ -93,7 +93,7 @@ const FilterModal = ({ isFilterOpen, setIsFilterOpen }) => {
             <div onClick={handleFilterCategoryClick} className="flex flex-col">
               <div
                 id="sort"
-                className={`flex flex-col p-4 pr-20 cursor-pointer border-l-4 border-transparent ${
+                className={`flex flex-col p-4 pr-20 max-[500px]:pr-10 cursor-pointer border-l-4 border-transparent ${
                   activeFilterCategory === "Sort By" &&
                   "bg-white border-primary/70"
                 }`}
@@ -101,13 +101,13 @@ const FilterModal = ({ isFilterOpen, setIsFilterOpen }) => {
                 <span id="sort" className={`text-xl font-medium`}>
                   Sort By
                 </span>
-                <span id="sort" className="text-sm text-primary">
+                {/* <span id="sort" className="text-sm text-primary">
                   Popularity
-                </span>
+                </span> */}
               </div>
               <span
                 id="cuisine"
-                className={`p-4 py-6 pr-20 text-xl font-medium cursor-pointer border-l-4 border-transparent ${
+                className={`p-4 py-6 pr-20 max-[500px]:pr-10 text-xl font-medium cursor-pointer border-l-4 border-transparent ${
                   activeFilterCategory === "Cuisines" &&
                   "bg-white border-primary/70"
                 }`}
@@ -116,7 +116,7 @@ const FilterModal = ({ isFilterOpen, setIsFilterOpen }) => {
               </span>
               <span
                 id="rating"
-                className={`p-4 py-6 pr-20 text-xl font-medium cursor-pointer border-l-4 border-transparent ${
+                className={`p-4 py-6 pr-20 max-[500px]:pr-10 text-xl font-medium cursor-pointer border-l-4 border-transparent ${
                   activeFilterCategory === "Rating" &&
                   "bg-white border-primary/70"
                 }`}
@@ -125,7 +125,7 @@ const FilterModal = ({ isFilterOpen, setIsFilterOpen }) => {
               </span>
               <span
                 id="cost"
-                className={`p-4 py-6 pr-20 text-xl font-medium cursor-pointer border-l-4 border-transparent ${
+                className={`p-4 py-6 pr-20 max-[500px]:pr-10 text-xl font-medium cursor-pointer border-l-4 border-transparent ${
                   activeFilterCategory === "Cost" &&
                   "bg-white border-primary/70"
                 }`}
@@ -193,7 +193,7 @@ const FilterModal = ({ isFilterOpen, setIsFilterOpen }) => {
           ) : activeFilterCategory === "Cuisines" ? (
             <section className="p-4 py-6 h-full">
               <p className="text-xl mb-4">Select Cuisines</p>
-              <div className="flex flex-col flex-wrap h-72 gap-2">
+              <div className="flex flex-col flex-wrap max-[500px]:flex-nowrap max-[500px]:overflow-y-auto h-72 gap-2">
                 {cuisines.map((cuisine) => {
                   return (
                     <label className="flex items-center gap-2 cursor-pointer">

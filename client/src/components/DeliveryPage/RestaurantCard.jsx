@@ -22,7 +22,7 @@ const RestaurantCard = ({ data }) => {
   return (
     <Link
       to={`/explore/${_id}`}
-      className="p-2 w-[350px] cursor-pointer rounded-2xl border border-transparent hover:border-inherit hover:shadow-lg"
+      className="p-2 w-[350px] max-[500px]:w-full cursor-pointer rounded-2xl border border-transparent max-[500px]:shadow-lg hover:border-inherit hover:shadow-lg"
     >
       <div className="relative w-full h-64">
         <img

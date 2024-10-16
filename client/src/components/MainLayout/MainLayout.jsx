@@ -9,6 +9,7 @@ import LoginPage from "../../pages/LoginPage/LoginPage";
 import { useThunk } from "../../customHooks/useThunk";
 import { fetchAllDelivery } from "../../store";
 import { Spinner } from "@chakra-ui/react";
+import SearchBar from "../SearchBar";
 
 const MainLayout = () => {
   const location = useSelector((state) => state.location);
@@ -36,6 +37,10 @@ const MainLayout = () => {
       ) : (
         ""
       )}
+
+      <div className="hidden max-[500px]:flex max-[500px]:justify-center py-4">
+        <SearchBar />
+      </div>
 
       <Outlet />
 
