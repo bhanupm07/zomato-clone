@@ -70,8 +70,10 @@ const FoodCard = ({ food }) => {
       </div>
 
       <div className="flex flex-col justify-between items-start gap-1 w-[80%]">
-        <span className="text-lg font-medium text-black">{name}</span>
-        <div className="flex gap-2">
+        <span className="text-lg max-[500px]:text-base font-medium text-black">
+          {name}
+        </span>
+        <div className="flex gap-2 max-[500px]:text-sm">
           <p className="flex gap-1 items-center">
             <span>{rating}</span>
             <FaStar className="text-yellow-400" />
@@ -79,7 +81,9 @@ const FoodCard = ({ food }) => {
           <p>{votes} votes</p>
         </div>
         <span>₹ {price}</span>
-        <p className="text-sm">{TruncateText({ text: description })}</p>
+        <p className="text-sm max-[500px]:text-xs">
+          {TruncateText({ text: description })}
+        </p>
         <button
           onClick={handleAddToCart}
           className={`flex items-center gap-2 hover:scale-105 ${

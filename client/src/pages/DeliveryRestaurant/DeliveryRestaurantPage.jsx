@@ -134,11 +134,11 @@ const DeliveryRestaurantPage = () => {
   };
 
   return (
-    <main className="px-20 flex flex-col text-gray-500">
+    <main className="px-20 max-[500px]:px-7 flex flex-col text-gray-500">
       <hr className="h[0.5px] bg-gray-300 my-2" />
 
       <div className="flex items-start justify-between">
-        <h2 className="text-4xl text-black font-semibold">
+        <h2 className="text-4xl max-[500px]:text-2xl text-black font-semibold">
           {restaurantData?.name}
         </h2>
         <div className="flex gap-4 font-semibold text-white items-start">
@@ -148,7 +148,7 @@ const DeliveryRestaurantPage = () => {
             </span>
             <span className="text-black text-[10px]">Delivery Ratings</span>
           </div>
-          <div className="flex flex-col items-end">
+          <div className="flex flex-col items-end max-[500px]:hidden">
             <span className="flex items-center bg-green-600 gap-1 p-1 rounded-lg">
               {restaurantData?.diningRating} <FaStar className="text-xs" />
             </span>
@@ -157,7 +157,7 @@ const DeliveryRestaurantPage = () => {
         </div>
       </div>
 
-      <div className="text-lg">
+      <div className="text-lg max-[500px]:text-base">
         <p>{getStringFromArray(restaurantData?.cuisine)}</p>
         <p className="text-gray-400 capitalize">{location}</p>
       </div>
@@ -201,7 +201,9 @@ const DeliveryRestaurantPage = () => {
       <p className="text-black text-2xl font-medium mb-2">Order Online</p>
       <hr className="h-[0.5px] bg-gray-300" />
 
-      <div className="flex flex-col gap-6 my-6">{foodJsx}</div>
+      <div className="flex flex-col gap-6 max-[500px]:gap-8 my-6">
+        {foodJsx}
+      </div>
     </main>
   );
 };

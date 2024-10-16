@@ -104,7 +104,7 @@ const CartPage = () => {
   );
 
   return (
-    <main className="mx-20 py-4 mt-4 border-t flex flex-col items-center">
+    <main className="mx-20 max-[500px]:mx-7 py-4 mt-4 border-t flex flex-col items-center">
       {fetchingCartLoader ? (
         <Spinner size="xl" />
       ) : !cart?.length ? (
@@ -119,11 +119,11 @@ const CartPage = () => {
           </Link>
         </div>
       ) : (
-        <section className="flex flex-col items-center w-[55%]">
+        <section className="flex flex-col items-center max-[500px]:items-stretch w-[55%] max-[500px]:w-full">
           <h2 className="text-4xl font-medium mb-2">Cart items</h2>
           <div className="">
             <div className="flex flex-col gap-4 my-6">{cartItemsJsx}</div>
-            <div className="bg-primary text-white flex items-center justify-between p-4 rounded-md cursor-pointer hover:scale-105 transition-transform">
+            <div className="bg-primary text-white max-[500px]:my-7 max-[500px]:mt-10 flex items-center justify-between p-4 rounded-md cursor-pointer hover:scale-105 transition-transform">
               <section className="flex flex-col">
                 <span className="font-medium text-lg">₹ {cartTotal}</span>
                 <span className="text-sm">TOTAL</span>

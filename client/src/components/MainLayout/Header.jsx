@@ -30,14 +30,20 @@ const Header = ({
   }, [name]);
 
   return (
-    <div className="flex items-center gap-6 py-2 pl-[70px]">
+    <div className="flex items-center max-[500px]:justify-between max-[500px]:px-4 max-[500px]:shadow-xl gap-6 max-[500px]:gap-1 py-2 max-[500px]:py-4 pl-[70px] max-[900px]:pl-0">
       <Link to="/">
-        <img src={logoBlack} alt="zomato logo" className="w-36" />
+        <img
+          src={logoBlack}
+          alt="zomato logo"
+          className="w-36 max-[500px]:w-24"
+        />
       </Link>
-      <SearchBar />
+      <div className="max-[500px]:hidden">
+        <SearchBar />
+      </div>
       {localStorage.getItem("token") ? (
         <section className="flex items-center gap-4">
-          <div className="flex gap-2 items-center ml-24 relative cursor-pointer">
+          <div className="flex gap-2 items-center ml-24 max-[500px]:ml-0 relative cursor-pointer">
             {imageUrl ? (
               <img
                 src={imageUrl}

@@ -92,7 +92,7 @@ const EditProfileModal = ({
 
   return (
     <main className="fixed inset-0 bg-black/70 flex justify-center items-center z-20">
-      <div className="bg-white rounded-md w-1/3">
+      <div className="bg-white rounded-md w-1/3 max-[500px]:w-[90%]">
         <div className="flex justify-between items-center p-6 pb-1">
           <h3 className="text-2xl">Edit profile</h3>
           <IoClose

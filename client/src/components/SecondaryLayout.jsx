@@ -4,7 +4,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const SecondaryLayout = () => {
   return (
     <main>
-      <div className="flex items-center border-b-[1px] border-gray-200 px-20">
+      <div className="flex items-center border-b-[1px] border-gray-200 px-20 max-[500px]:hidden">
         <NavLink to="delivery">
           {({ isActive }) =>
             isActive ? (

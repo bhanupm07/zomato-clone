@@ -17,7 +17,7 @@ const Filter = ({ isFilterOpen, setIsFilterOpen }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="px-20 py-6 flex gap-4">
+    <div className="px-20 max-[500px]:px-5 py-6 max-[500px]:py-2 max-[500px]:pt-0 flex gap-4">
       <div
         onClick={() => setIsFilterOpen(!isFilterOpen)}
         className="flex gap-2 border border-gray-300 text-gray-400 px-2 py-1 rounded-lg cursor-pointer hover:bg-gray-100/50"
