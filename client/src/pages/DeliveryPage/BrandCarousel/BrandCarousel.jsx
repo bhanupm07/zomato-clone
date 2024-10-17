@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../../../components/DeliveryPage/Carousel";
+import { Link } from "react-router-dom";
 
 const BrandCarousel = () => {
   const brandArray = [
@@ -182,9 +183,33 @@ const BrandCarousel = () => {
   ];
 
   return (
-    <div className="px-20 py-8">
-      <h2 className="text-3xl mb-8">Top brands for you</h2>
+    <div className="px-20 max-[500px]:px-7 py-8">
+      <h2 className="text-3xl max-[500px]:text-2xl mb-8">Top brands for you</h2>
       <Carousel dataArray={brandArray} />
+      <div className="hidden max-[500px]:flex overflow-x-auto max-[500px]:gap-5">
+        {brandArray.map((brand, index) => {
+          return (
+            <Link
+              to={`/explore/${brand._id}`}
+              key={index}
+              id={brand.name}
+              className="flex flex-col items-center gap-2 cursor-pointer"
+              onClick={() => dispatch(handleCarouselClickThunk(brand.name))}
+            >
+              <div className="rounded-full max-[500px]:w-24">
+                <img
+                  src={brand.img}
+                  alt={brand.name}
+                  className="rounded-full w-full shadow-md"
+                />
+              </div>
+              <span className="text-xl max-[500px]:text-sm text-center font-medium">
+                {brand.name}
+              </span>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 };

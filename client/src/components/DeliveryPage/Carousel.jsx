@@ -73,7 +73,7 @@ const Carousel = ({ dataArray }) => {
   };
 
   return (
-    <div className="flex gap-10 relative">
+    <div className="flex gap-10 relative max-[500px]:hidden">
       {renderedCarousel}
       {pointers.left > 0 && (
         <IoIosArrowBack

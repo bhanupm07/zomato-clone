@@ -1,7 +1,10 @@
 import React from "react";
 import Carousel from "../../../components/DeliveryPage/Carousel";
+import { useDispatch } from "react-redux";
+import { handleCarouselClickThunk } from "../../../store/thunks/handleCarouselClickThunk";
 
 const FoodCarousel = () => {
+  const dispatch = useDispatch();
   const foodArray = [
     {
       img: "https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png",
@@ -66,9 +69,34 @@ const FoodCarousel = () => {
   ];
 
   return (
-    <div className="bg-[#F8F8F8] px-20 py-8">
-      <h2 className="text-3xl mb-8">Inspiration for your first order</h2>
+    <div className="bg-[#F8F8F8] px-20 max-[500px]:px-7 py-8">
+      <h2 className="text-3xl max-[500px]:text-2xl mb-8">
+        Inspiration for your first order
+      </h2>
       <Carousel dataArray={foodArray} />
+      <div className="hidden max-[500px]:flex items-center overflow-x-auto max-[500px]:gap-5">
+        {foodArray.map((food, index) => {
+          return (
+            <div
+              key={index}
+              id={food.name}
+              className="flex flex-col items-center gap-2 cursor-pointer"
+              onClick={() => dispatch(handleCarouselClickThunk(food.name))}
+            >
+              <div className="rounded-full max-[500px]:w-24">
+                <img
+                  src={food.img}
+                  alt={food.name}
+                  className="rounded-full w-full shadow-md"
+                />
+              </div>
+              <span className="text-xl max-[500px]:text-sm text-center font-medium">
+                {food.name}
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
