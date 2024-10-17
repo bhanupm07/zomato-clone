@@ -61,7 +61,7 @@ const FoodCard = ({ food }) => {
   return (
     <main className="flex gap-4">
       <div className="flex-grow relative w-40 h-44 rounded-lg overflow-hidden">
-        <img src={imageUrl} alt={name} className="w-full h-full" />
+        <img src={imageUrl} alt={name} className="w-full h-full object-cover" />
         <img
           src={vegOrNonVeg === "veg" ? veg : nonVeg}
           alt={vegOrNonVeg}

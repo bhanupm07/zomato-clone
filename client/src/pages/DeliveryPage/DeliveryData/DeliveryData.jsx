@@ -57,7 +57,7 @@ const DeliveryData = () => {
 
   return (
     <div className="px-20 max-[500px]:px-7 py-8">
-      <h2 className="text-3xl mb-8">
+      <h2 className="text-3xl max-[500px]:text-2xl mb-8">
         Delivery Restaurants {location && `in ${location}`}
       </h2>
       <div className="flex flex-wrap max-[500px]:flex-nowrap max-[500px]:flex-col justify-center gap-6 max-[500px]:gap-4">
