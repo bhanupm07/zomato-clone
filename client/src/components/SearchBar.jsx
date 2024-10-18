@@ -69,6 +69,10 @@ const SearchBar = () => {
     setIsSearchModal(true);
   };
 
+  useEffect(() => {
+    if (allDeliveryRestaurants.length) searchTermHandling(searchTerm);
+  }, [allDeliveryRestaurants]);
+
   const searchTermHandling = (searchTerm) => {
     const matchedCuisines = allDeliveryRestaurants.filter((obj) => {
       let isThere = false;
@@ -148,51 +152,65 @@ const SearchBar = () => {
           </div>
         </div>
       )}
-      {restaurantsMatched.length && searchTerm.length && isSearchModal ? (
+      {searchTerm.length && isSearchModal ? (
         <div
           ref={modalRef}
           className="absolute top-16 right-0 bg-white border border-gray-200 h-[300px] w-[420px] max-[500px]:w-[95%] overflow-y-scroll z-50 shadow-2xl rounded-xl py-2"
         >
-          {restaurantsMatched.map((obj) => {
-            return (
-              <Link
-                to={`/explore/${obj._id}`}
-                key={obj._id}
-                className="flex gap-4 p-3 px-4 hover:bg-gray-100 cursor-pointer"
-              >
-                <img
-                  src={obj.imageUrl}
-                  alt=""
-                  className="w-20 h-20 rounded-lg object-cover"
-                />
-                <div className="flex flex-col gap-1">
-                  <h3 className="">{obj.name}</h3>
-                  <div className="flex items-center gap-4 text-xs font-thin">
-                    <div className="flex items-center gap-1">
-                      <span className="flex items-center bg-green-600 gap-1 px-1 rounded-md font-semibold text-white">
-                        {obj?.diningRating} <FaStar className="text-[9px]" />
-                      </span>
-                      <span>DINING</span>
+          {restaurantsMatched.length ? (
+            restaurantsMatched.map((obj) => {
+              return (
+                <Link
+                  to={`/explore/${obj._id}`}
+                  key={obj._id}
+                  className="flex gap-4 p-3 px-4 hover:bg-gray-100 cursor-pointer"
+                >
+                  <img
+                    src={obj.imageUrl}
+                    alt=""
+                    className="w-20 h-20 rounded-lg object-cover"
+                  />
+                  <div className="flex flex-col gap-1">
+                    <h3 className="">{obj.name}</h3>
+                    <div className="flex items-center gap-4 text-xs font-thin">
+                      <div className="flex items-center gap-1">
+                        <span className="flex items-center bg-green-600 gap-1 px-1 rounded-md font-semibold text-white">
+                          {obj?.diningRating} <FaStar className="text-[9px]" />
+                        </span>
+                        <span>DINING</span>
+                      </div>
+                      <span className="font-thin text-xs">|</span>
+                      <div className="flex items-center gap-1">
+                        <span className="flex items-center bg-green-600 gap-1 px-1 rounded-md font-semibold text-white">
+                          {obj?.rating} <FaStar className="text-[9px]" />
+                        </span>
+                        <span>DELIVERY</span>
+                      </div>
                     </div>
-                    <span className="font-thin text-xs">|</span>
-                    <div className="flex items-center gap-1">
-                      <span className="flex items-center bg-green-600 gap-1 px-1 rounded-md font-semibold text-white">
-                        {obj?.rating} <FaStar className="text-[9px]" />
-                      </span>
-                      <span>DELIVERY</span>
+                    <div className="flex items-center text-red-500 text-sm">
+                      <span>Order Now</span>
+                      <RiArrowRightSFill className="text-lg" />
                     </div>
+                    <p className="text-xs text-gray-500">
+                      Delivery in {obj.deliveryTime} minutes
+                    </p>
                   </div>
-                  <div className="flex items-center text-red-500 text-sm">
-                    <span>Order Now</span>
-                    <RiArrowRightSFill className="text-lg" />
-                  </div>
-                  <p className="text-xs text-gray-500">
-                    Delivery in {obj.deliveryTime} minutes
-                  </p>
-                </div>
-              </Link>
-            );
-          })}
+                </Link>
+              );
+            })
+          ) : !restaurantsMatched.length && allDeliveryRestaurants.length ? (
+            <div className="w-full h-full flex justify-center items-center text-center max-[500px]:text-sm text-primary font-bold">
+              No such item available.
+              <br /> Try changing the search term!
+            </div>
+          ) : (
+            <div className="w-full h-full flex flex-col gap-2 justify-center items-center text-center max-[500px]:text-sm text-primary font-bold">
+              <Spinner size="lg" />
+              <span>
+                Loading... <br /> Please wait for a few seconds!
+              </span>
+            </div>
+          )}
         </div>
       ) : null}
     </div>
