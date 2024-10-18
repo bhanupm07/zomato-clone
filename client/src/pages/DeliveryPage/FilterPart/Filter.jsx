@@ -17,10 +17,10 @@ const Filter = ({ isFilterOpen, setIsFilterOpen }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="px-20 max-[500px]:px-5 py-6 max-[500px]:py-2 max-[500px]:pt-0 flex gap-4">
+    <div className="px-20 max-[500px]:px-5 py-6 max-[500px]:py-2 max-[500px]:pt-0 flex items-center flex-wrap gap-4 max-[500px]:gap-2">
       <div
         onClick={() => setIsFilterOpen(!isFilterOpen)}
-        className="flex gap-2 border border-gray-300 text-gray-400 px-2 py-1 rounded-lg cursor-pointer hover:bg-gray-100/50"
+        className="flex gap-2 max-[500px]:text-sm border border-gray-300 text-gray-400 px-2 py-1 rounded-lg cursor-pointer hover:bg-gray-100/50"
       >
         {filters.filterCount ? (
           <span className="bg-primary text-white px-2 rounded-md">
@@ -35,7 +35,7 @@ const Filter = ({ isFilterOpen, setIsFilterOpen }) => {
         return (
           <div
             key={i}
-            className="bg-primary text-white flex gap-2 items-center px-2 py-1 rounded-lg"
+            className="bg-primary text-white max-[500px]:text-sm flex gap-2 items-center px-2 py-1 rounded-lg"
           >
             <span>{filter}</span>
             <RxCross2
