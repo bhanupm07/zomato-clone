@@ -20,7 +20,9 @@ const HomePage = () => {
         <p className="text-4xl pb-6 max-[500px]:text-2xl text-center max-[500px]:px-7 max-[500px]:font-semibold">
           Discover the best food & drinks in Delhi NCR
         </p>
-        <SearchBar />
+        <div className="w-[65%] max-[500px]:w-[90%]">
+          <SearchBar />
+        </div>
       </div>
 
       <div className="flex max-[500px]:flex-wrap items-center justify-center max-[500px]:justify-start gap-5 px-20 pt-10 pb-24 max-[500px]:pb-12 max-[500px]:px-7">

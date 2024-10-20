@@ -33,7 +33,7 @@ const FoodCard = ({ food }) => {
 
   const handleAddToCart = (e) => {
     if (localStorage.getItem("token") && !isOnCart) {
-      console.log("here");
+      // console.log("here");
       const detailsObject = {
         userId,
         foodId: _id,

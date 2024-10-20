@@ -27,8 +27,6 @@ const DeliveryData = () => {
     }
   }, [filters]);
 
-  console.log(filteredRestaurants);
-
   const deliveryRestaurantsJsx =
     filteredRestaurants.length === 0 && filterCount === 0 ? (
       allDeliveryRestaurants.map((deliveryRestaurant) => {

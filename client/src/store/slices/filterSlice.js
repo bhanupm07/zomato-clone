@@ -26,7 +26,7 @@ const filterSlice = createSlice({
         // console.log("daal diya");
         state.cuisineSelected = [...state.cuisineSelected, payload];
       }
-      console.log("cuisineSelected", state.cuisineSelected);
+      // console.log("cuisineSelected", state.cuisineSelected);
     },
     handleRatingRadioChange(state, action) {
       state.rating = action.payload;

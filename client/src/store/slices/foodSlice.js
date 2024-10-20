@@ -7,7 +7,6 @@ const foodSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchAllFoods.fulfilled, (state, action) => {
-      console.log(action.payload);
       return action.payload;
     });
   },

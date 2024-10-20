@@ -15,8 +15,8 @@ const updateUserDetailsThunk = createAsyncThunk(
       });
       const data = await response.json();
       if (response.ok) {
-        console.log("Updated user details successfully");
-        console.log(data);
+        // console.log("Updated user details successfully");
+        // console.log(data);
         return data;
       } else {
         console.log("failed to update user details");

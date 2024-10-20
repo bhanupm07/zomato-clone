@@ -15,8 +15,8 @@ const addToCartThunk = createAsyncThunk(
       });
       const data = response.json();
       if (response.ok) {
-        console.log("Food added to cart successfully");
-        console.log(data);
+        // console.log("Food added to cart successfully");
+        // console.log(data);
         return data;
       } else {
         console.error("Failed to add Food to cart");

@@ -15,8 +15,8 @@ const getCartThunk = createAsyncThunk("get/cart", async ({ userId, token }) => {
     );
     const data = await response.json();
     if (response.ok) {
-      console.log("fetched cart details");
-      console.log(data);
+      // console.log("fetched cart details");
+      // console.log(data);
       return data;
     } else {
       console.error("failed to get cart details");

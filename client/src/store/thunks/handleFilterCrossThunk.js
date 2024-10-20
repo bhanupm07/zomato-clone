@@ -10,7 +10,7 @@ export const handleFilterCrossThunk = createAsyncThunk(
   async (filter, { dispatch, getState }) => {
     dispatch(handleFilterCrossClick(filter));
     const { filters } = getState();
-    console.log(filters);
+    // console.log(filters);
     dispatch(handleFilter(filters));
     dispatch(handleCrossClick(filter));
     dispatch(handleFilterCount());

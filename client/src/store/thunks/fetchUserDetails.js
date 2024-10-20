@@ -13,7 +13,7 @@ const fetchUserDetails = createAsyncThunk(
         },
       });
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       return data.user;
     } catch (error) {
       throw error;
