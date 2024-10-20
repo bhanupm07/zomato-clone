@@ -125,7 +125,7 @@ const userSlice = createSlice({
       state.bookmarks = action.payload;
     });
     builder.addCase(removeFromBookmarksThunk.fulfilled, (state, action) => {
-      console.log(action.payload);
+      // console.log(action.payload);
       state.bookmarks = action.payload;
     });
   },

@@ -18,8 +18,8 @@ const addToBookmarksThunk = createAsyncThunk(
       );
       const data = await response.json();
       if (response.ok) {
-        console.log("Added to bookmarks successfully");
-        console.log(data);
+        // console.log("Added to bookmarks successfully");
+        // console.log(data);
         return data;
       } else {
         console.log("Failed to add to bookmarks");

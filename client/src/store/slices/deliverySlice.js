@@ -13,7 +13,7 @@ const deliverySlice = createSlice({
     handleFilter(state, action) {
       let { sortBy, cuisineSelected, rating, cost } = action.payload;
       let filteredData = [...state.allDeliveryRestaurants];
-      console.log("cuisineSelected inside handleFilter-", cuisineSelected);
+      // console.log("cuisineSelected inside handleFilter-", cuisineSelected);
 
       // filtering data according to cuisines
       if (cuisineSelected.length > 0) {
@@ -136,7 +136,6 @@ const deliverySlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(fetchAllDelivery.fulfilled, (state, action) => {
-      console.log(action.payload);
       state.allDeliveryRestaurants = [...action.payload];
       state.filteredRestaurants = [];
     });

@@ -7,7 +7,7 @@ export const handleCarouselClickThunk = createAsyncThunk(
   async (foodName, { dispatch, getState }) => {
     dispatch(handleCheckboxChange(foodName));
     const { filters } = getState();
-    console.log(filters);
+    // console.log(filters);
     dispatch(handleFilter(filters));
     dispatch(handleFilterCount());
   }

@@ -100,7 +100,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="flex gap-2 items-center bg-white p-4 rounded-lg text-black w-[55%] relative shadow max-[500px]:w-[90%]">
+    <div className="flex gap-2 items-center bg-white p-4 rounded-lg text-black w-full relative shadow">
       {isLoading ? (
         <Spinner size="sm" color="red.400" />
       ) : (

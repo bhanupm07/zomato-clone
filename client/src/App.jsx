@@ -18,24 +18,24 @@ const App = () => {
   const user = useSelector((state) => state.user);
   const toast = useToast();
 
-  useEffect(() => {
-    if (user.message && !user.name) {
-      toast({
-        title: user.message,
-        // description: "Please enter the right credentials",
-        status: "error",
-        duration: 4000,
-        isClosable: true,
-      });
-    } else if (user.name) {
-      toast({
-        title: "Signed up successfully",
-        status: "success",
-        duration: 4000,
-        isClosable: true,
-      });
-    }
-  }, [user]);
+  // useEffect(() => {
+  //   if (user.message && !user.name) {
+  //     toast({
+  //       title: user.message,
+  //       // description: "Please enter the right credentials",
+  //       status: "error",
+  //       duration: 4000,
+  //       isClosable: true,
+  //     });
+  //   } else if (user.name) {
+  //     toast({
+  //       title: "Signed up successfully",
+  //       status: "success",
+  //       duration: 4000,
+  //       isClosable: true,
+  //     });
+  //   }
+  // }, [user]);
 
   return (
     <>

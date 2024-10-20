@@ -31,15 +31,17 @@ const MainLayout = () => {
       />
 
       {location ? (
-        <p className="text-gray-400 text-sm px-20 mt-5 tracking-wide capitalize">
+        <p className="text-gray-400 text-sm px-20 max-[500px]:px-7 max-[500px]:text-xs mt-5 tracking-wide capitalize">
           Home / {location}
         </p>
       ) : (
         ""
       )}
 
-      <div className="hidden max-[500px]:flex max-[500px]:justify-center py-4">
-        <SearchBar />
+      <div className="hidden max-[500px]:flex max-[500px]:justify-center py-4 w-full">
+        <div className="w-[90%]">
+          <SearchBar />
+        </div>
       </div>
 
       <Outlet />

@@ -38,7 +38,7 @@ const Header = ({
           className="w-36 max-[500px]:w-24"
         />
       </Link>
-      <div className="max-[500px]:hidden">
+      <div className="max-[500px]:hidden w-[55%] max-[500px]:w-[90%]">
         <SearchBar />
       </div>
       {localStorage.getItem("token") ? (

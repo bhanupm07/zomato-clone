@@ -72,9 +72,6 @@ const DeliveryRestaurantPage = () => {
     runGetBookmarksThunk,
   ]);
 
-  console.log(allFoodsArray);
-
-  // console.log(restaurantData);
   let foodJsx;
   if (!foodData.length) {
     foodJsx = (
@@ -107,7 +104,7 @@ const DeliveryRestaurantPage = () => {
   const handleBookmarkButton = () => {
     if (localStorage.getItem("token")) {
       if (isBookmarked) {
-        console.log("removing...");
+        // console.log("removing...");
         const argument = {
           userId,
           restaurantId: restaurantData._id,

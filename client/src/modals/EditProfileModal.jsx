@@ -20,6 +20,7 @@ const EditProfileModal = ({
     description,
     phone,
   });
+  const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [runUpdateDetailsThunk, _, isUpdating] = useThunk(
     updateUserDetailsThunk
@@ -56,6 +57,20 @@ const EditProfileModal = ({
     setFormDetails({ ...formDetails, [e.target.name]: e.target.value });
   };
 
+  const validate = () => {
+    let validationErrors = {};
+    if (!formDetails.name) {
+      validationErrors.name = "Name cannot be empty";
+    }
+    if (!formDetails.email) {
+      validationErrors.email = "Email cannot be empty";
+    } else if (!/\S+@\S+\.\S+/.test(formDetails.email)) {
+      validationErrors.email = "Email is not valid";
+    }
+    setErrors(validationErrors);
+    return Object.keys(validationErrors).length === 0;
+  };
+
   const handleProfilePhotoChange = async (e) => {
     setIsLoading(true);
     try {
@@ -74,7 +89,7 @@ const EditProfileModal = ({
       );
       const data = await response.json();
       setFormDetails({ ...formDetails, imageUrl: data.secure_url });
-      console.log(data);
+      // console.log(data);
       setIsLoading(false);
     } catch (error) {
       console.log(error);
@@ -83,11 +98,13 @@ const EditProfileModal = ({
   };
 
   const handleUpdateButton = () => {
-    const argument = {
-      token: localStorage.getItem("token"),
-      updatedDetails: formDetails,
-    };
-    runUpdateDetailsThunk(argument);
+    if (validate()) {
+      const argument = {
+        token: localStorage.getItem("token"),
+        updatedDetails: formDetails,
+      };
+      runUpdateDetailsThunk(argument);
+    }
   };
 
   return (
@@ -154,6 +171,11 @@ const EditProfileModal = ({
                     data.name === "name" && "capitalize"
                   }`}
                 />
+                {errors[data.name] && (
+                  <p className="text-red-500 text-xs mt-1 px-2">
+                    {errors[data.name]}
+                  </p>
+                )}
               </fieldset>
             );
           })}
@@ -169,6 +191,7 @@ const EditProfileModal = ({
           <button
             onClick={handleUpdateButton}
             className="w-36 border bg-primary text-white py-2 rounded-md"
+            disabled={isUpdating}
           >
             {isUpdating ? <Spinner /> : "Update"}
           </button>

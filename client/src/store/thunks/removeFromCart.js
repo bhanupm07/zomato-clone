@@ -18,8 +18,8 @@ const removeFromCart = createAsyncThunk(
       );
       const data = await response.json();
       if (response.ok) {
-        console.log("Removed from cart successfully");
-        console.log(data);
+        // console.log("Removed from cart successfully");
+        // console.log(data);
         return data;
       } else {
         console.log("Failed to remove item from the cart.");

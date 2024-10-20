@@ -9,7 +9,7 @@ const fetchLocation = createAsyncThunk(
       );
       const data = await response.json();
       if (data.status.code === 200) {
-        console.log("results:", data.results);
+        // console.log("results:", data.results);
         return data.results[0].formatted;
       } else {
         console.log("Reverse geolocation request failed.");
