@@ -9,6 +9,7 @@ import { addToBookmarksThunk } from "../thunks/addToBookmarksThunk";
 import { getBookmarksThunk } from "../thunks/getBookmarksThunk";
 import { removeFromBookmarksThunk } from "../thunks/removeFromBookmarksThunk";
 import { updateUserDetailsThunk } from "../thunks/updateUserDetailsThunk";
+import { clearCartThunk } from "../thunks/clearCartThunk";
 
 const userSlice = createSlice({
   name: "user",
@@ -127,6 +128,11 @@ const userSlice = createSlice({
     builder.addCase(removeFromBookmarksThunk.fulfilled, (state, action) => {
       // console.log(action.payload);
       state.bookmarks = action.payload;
+    });
+    builder.addCase(clearCartThunk.fulfilled, (state, action) => {
+      // console.log(action.payload);
+      if (action.payload.message == "Cart cleared successfully")
+        state.cart = [];
     });
   },
 });
