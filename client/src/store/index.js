@@ -58,3 +58,4 @@ export * from "./thunks/addToBookmarksThunk";
 export * from "./thunks/getBookmarksThunk";
 export * from "./thunks/removeFromBookmarksThunk";
 export * from "./thunks/updateUserDetailsThunk";
+export * from "./thunks/clearCartThunk";

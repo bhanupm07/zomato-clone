@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { addToCartThunk, getCartThunk, removeFromCart } from "../../store";
+import {
+  addToCartThunk,
+  clearCartThunk,
+  getCartThunk,
+  removeFromCart,
+} from "../../store";
 import { Link, useParams } from "react-router-dom";
 import { useThunk } from "../../customHooks/useThunk";
 import { useSelector } from "react-redux";
@@ -7,14 +12,16 @@ import veg from "../../assets/veg.svg";
 import nonVeg from "../../assets/non-veg.svg";
 import { FaCaretRight } from "react-icons/fa";
 import emptyCart from "../../assets/empty-cart.webp";
-import { Spinner } from "@chakra-ui/react";
+import { Spinner, useToast } from "@chakra-ui/react";
 
 const CartPage = () => {
   const [runGetCartThunk, _, fetchingCartLoader] = useThunk(getCartThunk);
   const [removeFromCartThunk, __, removingLoader] = useThunk(removeFromCart);
   const [runAddToCartThunk, ___, addingLoader] = useThunk(addToCartThunk);
+  const [runClearCartThunk, ____, clearCartLoading] = useThunk(clearCartThunk);
   const { userId } = useParams();
   const { cart } = useSelector((state) => state.user);
+  const toast = useToast();
 
   useEffect(() => {
     const argument = {
@@ -103,6 +110,17 @@ const CartPage = () => {
     0
   );
 
+  const placeOrder = () => {
+    const argument = { userId, token: localStorage.getItem("token") };
+    runClearCartThunk(argument);
+    toast({
+      title: "Order placed successfully!",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
+  };
+
   return (
     <main className="mx-20 max-[500px]:mx-7 py-4 mt-4 border-t flex flex-col items-center">
       {fetchingCartLoader ? (
@@ -123,12 +141,17 @@ const CartPage = () => {
           <h2 className="text-4xl font-medium mb-2">Cart items</h2>
           <div className="">
             <div className="flex flex-col gap-4 my-6">{cartItemsJsx}</div>
-            <div className="bg-primary text-white max-[500px]:my-7 max-[500px]:mt-10 flex items-center justify-between p-4 rounded-md cursor-pointer hover:scale-105 transition-transform">
+            <div
+              onClick={placeOrder}
+              className="bg-primary text-white max-[500px]:my-7 max-[500px]:mt-10 flex items-center justify-between p-4 rounded-md cursor-pointer hover:scale-105 transition-transform"
+            >
               <section className="flex flex-col">
                 <span className="font-medium text-lg">₹ {cartTotal}</span>
                 <span className="text-sm">TOTAL</span>
               </section>
-              {(addingLoader || removingLoader) && <Spinner size="lg" />}
+              {(addingLoader || removingLoader || clearCartLoading) && (
+                <Spinner size="lg" />
+              )}
               <section className="flex items-center font-medium text-lg">
                 <p>Place Order</p>
                 <FaCaretRight />
