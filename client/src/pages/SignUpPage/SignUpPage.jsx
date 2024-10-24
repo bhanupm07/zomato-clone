@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ImCross } from "react-icons/im";
 import { useDispatch, useSelector } from "react-redux";
 import { signupThunk } from "../../store";
 import { useThunk } from "../../customHooks/useThunk";
-import { useToast } from "@chakra-ui/react";
+import { Spinner, useToast } from "@chakra-ui/react";
 import { PiEyeClosed } from "react-icons/pi";
 import { PiEye } from "react-icons/pi";
 
@@ -21,11 +21,10 @@ const SignUpPage = ({
   });
   const [passwordVisibility, setPasswordVisibility] = useState(false);
   const dispatch = useDispatch();
-  const [runSignupThunk, _, isLoading] = useThunk(signupThunk);
+  const [runSignupThunk, signUpData, isLoading, error] = useThunk(signupThunk);
   const toast = useToast();
 
   const handleSubmit = async (e) => {
-    console.log("here");
     e.preventDefault();
 
     const isFormValid =
@@ -53,14 +52,27 @@ const SignUpPage = ({
       imageUrl: "",
     };
     runSignupThunk(infoObject);
-    setShowSignupPage(!showSignupPage);
-    toast({
-      title: "Signed up successfully",
-      status: "success",
-      duration: 4000,
-      isClosable: true,
-    });
   };
+
+  useEffect(() => {
+    if (Object.keys(signUpData).length && !isLoading && !error) {
+      setShowSignupPage(false);
+      toast({
+        title: "Signed Up successfully",
+        status: "success",
+        duration: 4000,
+        isClosable: true,
+      });
+    } else if (error) {
+      toast({
+        title: "Sign Up failed",
+        description: error.message || "Something went wrong",
+        status: "error",
+        duration: 4000,
+        isClosable: true,
+      });
+    }
+  }, [signUpData, error, isLoading, setShowSignupPage, toast]);
 
   const handleInputChange = (e) => {
     setSignUpDetails({ ...signUpDetails, [e.target.name]: e.target.value });
@@ -174,7 +186,7 @@ const SignUpPage = ({
                 signUpDetails.agreementChecked ? "bg-primary" : "bg-gray-300"
               } text-white p-2 rounded-lg`}
             >
-              Create account
+              {isLoading ? <Spinner /> : "Create account"}
             </button>
           </form>
 
