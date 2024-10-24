@@ -1,4 +1,4 @@
-import { useToast } from "@chakra-ui/react";
+import { Spinner, useToast } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { ImCross } from "react-icons/im";
 import { PiEyeClosed } from "react-icons/pi";
@@ -19,7 +19,7 @@ const LoginPage = ({
     passwordVisibility: false,
   });
   const toast = useToast();
-  const [runLoginThunk, loginData, isLoading] = useThunk(loginThunk);
+  const [runLoginThunk, loginData, isLoading, error] = useThunk(loginThunk);
 
   const handleInputChange = (e) => {
     setLoginDetails({ ...loginDetails, [e.target.name]: e.target.value });
@@ -52,8 +52,28 @@ const LoginPage = ({
       password: loginDetails.password,
     };
     runLoginThunk(infoObject);
-    setShowLoginPage(!showLoginPage);
   };
+
+  // Close modal after login is successful
+  useEffect(() => {
+    if (Object.keys(loginData).length && !isLoading && !error) {
+      setShowLoginPage(false);
+      toast({
+        title: "Login successful",
+        status: "success",
+        duration: 4000,
+        isClosable: true,
+      });
+    } else if (error) {
+      toast({
+        title: "Login failed",
+        description: error.message || "Something went wrong",
+        status: "error",
+        duration: 4000,
+        isClosable: true,
+      });
+    }
+  }, [loginData, error, isLoading, setShowLoginPage, toast]);
 
   return (
     <>
@@ -124,7 +144,7 @@ const LoginPage = ({
               onClick={handleSubmit}
               className="bg-primary text-white p-2 rounded-lg"
             >
-              Log In
+              {isLoading ? <Spinner /> : "Log In"}
             </button>
           </form>
 
