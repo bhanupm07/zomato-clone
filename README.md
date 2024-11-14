@@ -6,6 +6,10 @@ A full-stack Zomato clone built using the MERN stack that allows users to explor
 
 Explore the live demo here: [Zomato Clone](https://zomato-clone-ruby-eight.vercel.app/)
 
+## 🎥 Demo Video
+
+Watch the demostration here: [Project Video](https://drive.google.com/file/d/1BhF_7jVrwNTd0dtFx4Bil20bVlKWYgJ8/view?usp=sharing)
+
 ## 📂 Project Overview
 
 The Zomato Clone provides users with the ability to explore various restaurants dynamically pulled from a data source, manage their profile information, and view restaurant details. This project emphasizes **full-stack development**, integrating a responsive frontend with a robust backend.
